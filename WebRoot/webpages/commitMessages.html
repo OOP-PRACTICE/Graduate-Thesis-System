@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link  href="Css/layout.css" rel="stylesheet" type="text/css" />
+<link href="Css/cb.css" rel="stylesheet" type="text/css"   />
+<link  href="Css/n.css" rel="stylesheet" type="text/css" />
+<style>
+.biankuangs{ border:solid #A6D2FF 1px; border-top:0px; display:  }
+</style>
+<script type="text/javascript">
+    $().ready(function () {
+    setStudMsgHeadTabCheck();
+    showUnreadSysMsgCount();
+    });
+</script>
+    
+<script type="text/javascript">
+    function returnIndex() {
+        window.location = "Images/mainImg.jpg";
+    }
+    function showMsg(msg, obj) {
+        jBox.tip(msg);
+        $("#" + obj).focus();
+    }
+    function saveClick(studentId) {
+        var Ctitle = $("#Ctitle").val();   //消息标题
+        if (Ctitle == "" || Ctitle.length>20) {
+            showMsg("请您输入消息标题,且不超过20个字！", "Ctitle");
+            return false;
+        }
+        var Ccontent = $("#Ccontent").val(); //消息内容
+        if (Ccontent == "" || Ccontent.length>200) {
+            showMsg("请您输入消息内容，且不超过200个字！", "Ccontent");
+            return false;
+        }
+        StudentCompain.insertCompain(studentId, Ctitle, Ctype, Ccontent, function (data) {
+            var obj = $.parseJSON(data);
+            if (obj.ok == true) {
+                jBox.alert(obj.message, "提示");
+                setTimeout(function () {
+                    window.location.reload();
+                }, 1500);
+            }
+            else {
+                jBox.tip(obj.message);
+            }
+        });
+    }
+</script>
+</head>
+<body>           
+<table width="99%" height="25" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:4px;">
+      <tr>
+        <td width="17" background="Images/bj4.gif"><img src="Picture/r.gif" width="16" height="16" /></td>
+        <td width="466" background="Images/bj4.gif">	
+		</td>
+        <td width="162" align="center" background="Images/bj4.gif">
+		
+				</td>           
+      </tr>
+    </table>
+<table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="1%" align="left" background="Images/b2.jpg"><img src="Picture/b1.jpg" width="10" height="26" /></td>
+            <td width="68%" background="Images/b2.jpg"><table width="124" border="0" align="left" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="20" align="left"><img src="Picture/tz.gif" width="10" height="16" /></td>
+                  <td width="104" align="left" class="biao">发送信息</td>
+                </tr>
+            </table></td>
+            <td width="31%" align="right" background="Images/b2.jpg"><img src="Picture/b3.jpg" width="9" height="26" /></td>
+          </tr>
+</table>
+<form id="form1" name="form1" method="post" action="?action=save">
+    <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="15%" height="30" align="right"><div align="right">信息主题： </div></td>
+          <td><input id="Ctitle" size="20" name="Ctitle" class="input_2"/></td>
+        </tr>
+		<label>
+		&nbsp;
+		</label>
+        <tr>
+            <td width="15%" height="29" align="right"><div align="right">收件人： </div></td>
+          <td><input id="Ctitle" size="20" name="Ctitle" class="input_2"/></td>
+        </tr>
+		<label>
+		&nbsp;
+		</label>
+        <tr>
+            <td width="15%" align="right"><div align="right">信息内容： </div></td>
+            <td><textarea name="Ccontent" cols="150" rows="20" id="Ccontent" class="input_2"></textarea></td>
+        </tr>
+		<label>
+		&nbsp;
+		</label>
+        <tr>
+            <td colspan="2" align="center">
+                <div align="center" >
+                    <input type="submit" value="提交" onclick="saveClick('7c50f70a-775b-4aef-8bf2-5010ec612c0d')" class="input2" />
+                    <input type="submit" value="返回" onclick="returnIndex()" class="input2" />
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

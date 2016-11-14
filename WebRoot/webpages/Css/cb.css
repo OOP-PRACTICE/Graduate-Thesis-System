@@ -1,0 +1,39 @@
+﻿.ba1 {
+	background-image: url(../Images/ba1.jpg);
+	border: 1px solid #88BEED;
+	font-family: "新宋体", Arial;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+
+.ba2 {
+	font-family: "新宋体", Arial;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #2D5393;
+	text-decoration: none;
+	border: 1px solid #E9F7FA;
+	list-style-image: url(../images-c/ico1.jpg);
+	background-color: #C0E0FF;
+}
+.ba3 {
+	font-family: "新宋体", Arial;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #00658F;
+	text-decoration: none;
+	background-image: url(../Images/ba3.jpg);
+	border: 1px solid #FFFFFF;
+	list-style-image: url(../images-c/ico1.jpg);
+}
+.t5{
+padding-left:5px;
+}
+body{ margin:0px; padding:0px;}

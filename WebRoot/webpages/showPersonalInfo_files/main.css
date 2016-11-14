@@ -1,0 +1,847 @@
+@import url( ../../css/jquery.ui.all.css );
+BODY {
+	MARGIN: 25px 0px 15px
+}
+TABLE.datalist {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.navigation {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.explain {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.title {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.subtitle {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.submodule {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.form {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.clew {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.error {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.buttonc {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.modeform1 {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.modeform2 {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.lable {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.scrol {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.datalistc {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.articleview {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 92%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.datalist {
+	BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #c49760 1px solid
+}
+TABLE.datalist TH {
+	FONT-SIZE: 12px; HEIGHT: 21px; BORDER-RIGHT: #fff 1px solid; BACKGROUND: #9f9f9f; WHITE-SPACE: nowrap; BORDER-BOTTOM: #ffdd75 2px solid; FONT-WEIGHT: normal; COLOR: #fff; TEXT-ALIGN: center; LETTER-SPACING: 1px; LINE-HEIGHT: 21px
+}
+TABLE.datalist TH.b1 {
+	BORDER-BOTTOM: #ffdd75 1px solid
+}
+TABLE.datalist TH A {
+	COLOR: #fff
+}
+TABLE.datalist TH A:hover {
+	COLOR: #ffff9d
+}
+TABLE.datalist TBODY {
+	BORDER-BOTTOM: #c49760 1px solid
+}
+TABLE.datalist TBODY TR {
+	BACKGROUND: #ebebeb
+}
+TABLE.datalist TBODY TR.over {
+	BACKGROUND: #ced3db
+}
+TABLE.datalist TBODY TR.click {
+	BACKGROUND: #aab3c1
+}
+TABLE.datalist TBODY TD {
+	FONT-SIZE: 12px; BORDER-TOP: #fff 1px solid; HEIGHT: 22px; BORDER-RIGHT: #fff 1px solid; COLOR: #000; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 5px; LETTER-SPACING: 1px; LINE-HEIGHT: 22px; PADDING-RIGHT: 5px
+}
+TABLE.datalist TBODY TD A {
+	TEXT-DECORATION: underline
+}
+TABLE.datalist TBODY TD A:hover {
+	TEXT-DECORATION: none; COLOR: #000
+}
+TABLE.datalist TABLE.nonStyle {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.datalist TABLE.nonStyle TH {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: transparent
+}
+TABLE.datalist TABLE.nonStyle TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: transparent
+}
+DIV.navigation {
+	PADDING-BOTTOM: 15px; MARGIN: 2px auto 15px
+}
+DIV.navigation DIV.button {
+	FLOAT: left
+}
+DIV.navigation DIV.page {
+	VERTICAL-ALIGN: middle; FLOAT: right; TEXT-ALIGN: right
+}
+DIV.navigation DIV.page EM {
+	COLOR: #c00; FONT-STYLE: normal
+}
+DIV.navigation DIV.page EM.statushalt {
+	COLOR: #c00; FONT-STYLE: normal
+}
+DIV.navigation DIV.page EM.statusnatural {
+	COLOR: #060; FONT-STYLE: normal
+}
+DIV.navigation DIV.page SPAN {
+	OVERFLOW: hidden; HEIGHT: 18px; VERTICAL-ALIGN: super !important; MARGIN: 3px
+}
+DIV.navigation DIV.page SPAN SELECT {
+	FONT-SIZE: 12px; BORDER-TOP: #000 1px solid; HEIGHT: 17px !important; BORDER-RIGHT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; COLOR: #000; BORDER-LEFT: #000 1px solid; MARGIN: -2px
+}
+TABLE.form {
+	MARGIN-BOTTOM: 1px; BORDER-TOP: #c49760 1px dashed; BORDER-RIGHT: #c49760 1px dashed; BORDER-COLLAPSE: separate !important; BORDER-BOTTOM: #c49760 1px solid; BORDER-SPACING: 0px; BORDER-LEFT: #c49760 1px dashed
+}
+TABLE.form TBODY {
+	BORDER-TOP: #fff 1px solid; BORDER-RIGHT: #c49760 1px dashed; BORDER-BOTTOM: #c49760 1px solid; BORDER-LEFT: #fff 1px solid
+}
+TABLE.form TH {
+	HEIGHT: 23px; BORDER-RIGHT: #fff 1px solid; BACKGROUND: #eee; WHITE-SPACE: nowrap; BORDER-BOTTOM: #fff 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 13px/150% "????"; PADDING-LEFT: 20px; LETTER-SPACING: 1px; PADDING-RIGHT: 10px
+}
+TABLE.form TD {
+	FONT-SIZE: 13px; HEIGHT: 23px; FONT-FAMILY: "????"; BORDER-RIGHT: #fff 1px solid; BACKGROUND: #eee; BORDER-BOTTOM: #fff 1px solid; PADDING-LEFT: 10px; LETTER-SPACING: 1px; LINE-HEIGHT: 23px; PADDING-RIGHT: 5px
+}
+TABLE.form TD.subtable {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.form TD.subtable TABLE {
+	WIDTH: 100%
+}
+TABLE.form TD SPAN.space {
+	MARGIN: 0px 10px
+}
+DIV.error {
+	MARGIN-BOTTOM: 15px; BORDER-TOP: #c49760 1px dashed; BORDER-RIGHT: #c49760 1px dashed; BACKGROUND: #eee; BORDER-BOTTOM: #c49760 1px solid; BORDER-LEFT: #c49760 1px dashed
+}
+DIV.error P {
+	FONT: 13px/150% "????",Arial,sans-serif
+}
+DIV.error UL {
+	LIST-STYLE-TYPE: none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+DIV.error UL LI {
+	HEIGHT: 25px; BORDER-BOTTOM: #fff 1px solid; COLOR: #f00; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 13px/25px "????",Arial,sans-serif; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+DIV.buttonc {
+	PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px auto; PADDING-RIGHT: 0px
+}
+DIV.explain {
+	BORDER-TOP: #c49760 1px dashed; BORDER-RIGHT: #c49760 1px dashed; BACKGROUND: url(../image/explain.jpg) #eee no-repeat right bottom; BORDER-BOTTOM: #c49760 1px dashed; CLEAR: both; BORDER-LEFT: #c49760 1px dashed
+}
+DIV.explain P {
+	PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+DIV.explain DIV.text {
+	BORDER-TOP: #fff 1px solid; BORDER-RIGHT: #fff 1px solid; BORDER-BOTTOM: #fff 1px solid; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 25px; BORDER-LEFT: #fff 1px solid; PADDING-RIGHT: 25px
+}
+DIV.explain DIV.text P {
+	HEIGHT: auto; MIN-HEIGHT: 300px; MARGIN: 0px; LINE-HEIGHT: 150%; _height: 300px
+}
+DIV.explain DIV.etitle {
+	HEIGHT: 20px; WIDTH: 50px; BACKGROUND: url(../image/explain_title.gif) no-repeat; POSITION: absolute; FONT: 13px/150% "????",Arial,sans-serif; LETTER-SPACING: 1px
+}
+DIV.explain DIV.econtent {
+	FONT: 13px/150% "????",Arial,sans-serif; PADDING-LEFT: 55px; CLEAR: none; LETTER-SPACING: 1px
+}
+DIV.explain DIV.econtent OL {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 10px; PADDING-RIGHT: 0px
+}
+DIV.title {
+	MARGIN-BOTTOM: 15px; TEXT-ALIGN: center
+}
+DIV.title SPAN.left {
+	BACKGROUND: url(../image/point.gif) no-repeat left center; PADDING-LEFT: 20px
+}
+DIV.title SPAN.left EM {
+	COLOR: #cc0000; FONT: bold 15px/100% "????",Arial,sans-serif; LETTER-SPACING: 2px
+}
+DIV.title SPAN.right {
+	PADDING-RIGHT: 5px
+}
+DIV.subtitle {
+	BORDER-TOP: #c49760 1px solid; BACKGROUND: url(../image/biaoge_pic.gif) #faf1c9 no-repeat right bottom; BORDER-BOTTOM: #ffffff 1px solid; TEXT-ALIGN: left
+}
+DIV.subtitle DIV.titletext {
+	FONT-SIZE: 13px; HEIGHT: 21px; FONT-WEIGHT: bold; COLOR: #333333; TEXT-ALIGN: left; LETTER-SPACING: 2px; LINE-HEIGHT: 21px; TEXT-INDENT: 15px
+}
+DIV.submodule {
+	BORDER-TOP: #c49760 1px solid; BORDER-RIGHT: #c49760 1px solid; BACKGROUND: url(../image/moduledot.gif) #fdfbee 25px 8px; BORDER-BOTTOM: #c49760 1px solid; BORDER-LEFT: #c49760 1px solid
+}
+DIV.submodule DIV {
+	FONT-SIZE: 13px; HEIGHT: 25px; COLOR: #900; MARGIN-LEFT: 40px; LETTER-SPACING: 2px; LINE-HEIGHT: 25px
+}
+DIV.clew {
+	MARGIN-BOTTOM: 8px; BORDER-TOP: #c49760 1px dashed; BORDER-RIGHT: #c49760 1px dashed; BACKGROUND: #eee; BORDER-BOTTOM: #c49760 1px solid; BORDER-LEFT: #c49760 1px dashed
+}
+DIV.clew DIV {
+	FONT-SIZE: 13px; MARGIN-LEFT: 10px
+}
+DIV.subtitle DIV.titletext {
+	POSITION: relative
+}
+#mysub1 DIV.titletext {
+	POSITION: static
+}
+DIV.subtitle DIV.titletext DIV.panel {
+	HEIGHT: 16px; WIDTH: 16px; RIGHT: 20px; POSITION: absolute; TOP: 3px
+}
+DIV.panel A {
+	HEIGHT: 16px; WIDTH: 16px; DISPLAY: block; TEXT-INDENT: -9999px
+}
+DIV.panel A {
+	BACKGROUND: url(../image/hide.gif) no-repeat
+}
+DIV.panel A.show {
+	BACKGROUND: url(../image/show.gif) no-repeat
+}
+TABLE.modeform1 {
+	BORDER-TOP: #c49760 1px dashed; BORDER-RIGHT: #c49760 1px dashed; BORDER-BOTTOM: #c49760 1px solid; BORDER-LEFT: #c49760 1px dashed
+}
+TABLE.modeform1 TH {
+	FONT-SIZE: 12px; HEIGHT: 23px; FONT-FAMILY: "????"; WIDTH: 10%; WHITE-SPACE: nowrap; BORDER-BOTTOM: #fff 1px solid; TEXT-ALIGN: left; PADDING-LEFT: 25px; LETTER-SPACING: 1px; LINE-HEIGHT: 150%; PADDING-RIGHT: 5px; BACKGROUND-COLOR: #eee
+}
+TABLE.modeform1 TH.mode {
+	WIDTH: 100%; BORDER-BOTTOM: #fff 1px solid; FONT-WEIGHT: bold; COLOR: #900; TEXT-ALIGN: left; PADDING-LEFT: 15px; LETTER-SPACING: 2px; LINE-HEIGHT: 150%; BACKGROUND-COLOR: #eee
+}
+TABLE.modeform1 TD {
+	FONT-SIZE: 12px; HEIGHT: 23px; FONT-FAMILY: "????"; BORDER-BOTTOM: #fff 1px solid; LETTER-SPACING: 1px; LINE-HEIGHT: 23px; BACKGROUND-COLOR: #eee
+}
+TABLE.modeform1 TH.button {
+	FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: center; LETTER-SPACING: 2px; BACKGROUND-COLOR: #eee
+}
+TABLE.modeform2 {
+	BORDER-TOP: #c49760 0px dashed; BORDER-RIGHT: #c49760 1px dashed; BORDER-BOTTOM: #c49760 1px solid; BORDER-LEFT: #c49760 1px dashed
+}
+TABLE.modeform2 TH {
+	FONT-SIZE: 12px; HEIGHT: 23px; FONT-FAMILY: "????"; WIDTH: 10%; WHITE-SPACE: nowrap; BORDER-BOTTOM: #fff 1px solid; TEXT-ALIGN: left; PADDING-LEFT: 25px; LETTER-SPACING: 1px; LINE-HEIGHT: 150%; PADDING-RIGHT: 5px; BACKGROUND-COLOR: #eee
+}
+TABLE.modeform2 TH.mode {
+	WIDTH: 100%; BORDER-BOTTOM: #fff 1px solid; FONT-WEIGHT: bold; COLOR: #900; TEXT-ALIGN: left; PADDING-LEFT: 15px; LETTER-SPACING: 2px; LINE-HEIGHT: 150%; BACKGROUND-COLOR: #eee
+}
+TABLE.modeform2 TD {
+	FONT-SIZE: 12px; HEIGHT: 23px; FONT-FAMILY: "????"; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM: #fff 0px solid; LETTER-SPACING: 1px; LINE-HEIGHT: 23px; BACKGROUND-COLOR: #eee
+}
+TABLE.modeform2 TH.button {
+	FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: center; LETTER-SPACING: 2px; BACKGROUND-COLOR: #eee
+}
+TABLE.datalistc {
+	BORDER-TOP: #c49760 1px solid; BORDER-RIGHT: #c49760 1px solid; BACKGROUND: #fff; BORDER-BOTTOM: #c49760 1px solid; BORDER-LEFT: #c49760 1px solid; MARGIN: 0px auto
+}
+TABLE.datalistc TH {
+	FONT-SIZE: 13px; HEIGHT: 21px; BACKGROUND: #b6b6b6; COLOR: #fff; TEXT-ALIGN: center; LINE-HEIGHT: 21px
+}
+TABLE.datalistc TH.second {
+	FONT-SIZE: 13px; HEIGHT: 18px; BACKGROUND: #b6b6b6; COLOR: #fff; LINE-HEIGHT: 18px
+}
+TABLE.datalistc TBODY TR {
+	BACKGROUND: #ebebeb
+}
+TABLE.datalistc TBODY TR.over {
+	BACKGROUND: #ced3db
+}
+TABLE.datalistc TBODY TR.click {
+	BACKGROUND: #aab3c1
+}
+TABLE.datalistc TD {
+	LINE-HEIGHT: 130%
+}
+TABLE.datalistc TD.sort {
+	BACKGROUND: #f7edd2; PADDING-LEFT: 15px
+}
+TABLE.datalistc TD.r {
+	TEXT-ALIGN: right; PADDING-RIGHT: 15px
+}
+TABLE.datalistc TBODY TR TD.line {
+	HEIGHT: 1px; BACKGROUND: #c49760
+}
+TABLE.datalistc TBODY TR TD EM.state {
+	HEIGHT: 20px; BACKGROUND: #f1e3c9; COLOR: #c00; TEXT-ALIGN: center; DISPLAY: block; LINE-HEIGHT: 20px
+}
+DIV.lable {
+	BORDER-BOTTOM: #f1dca9 3px solid
+}
+DIV.lable LI {
+	LIST-STYLE-TYPE: none; HEIGHT: 18px; FLOAT: left; TEXT-ALIGN: center; LINE-HEIGHT: 18px; MARGIN-RIGHT: 1px
+}
+DIV.lable UL {
+	HEIGHT: 18px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #ffffff
+}
+DIV.lable A {
+	TEXT-DECORATION: none; BACKGROUND: #9f9f9f; COLOR: #fff; DISPLAY: block
+}
+DIV.lable A SPAN {
+	TEXT-DECORATION: none; BACKGROUND: url(../image/lable.jpg) no-repeat right top; COLOR: #fff; PADDING-LEFT: 15px; DISPLAY: block; PADDING-RIGHT: 15px
+}
+DIV.lable A:hover {
+	TEXT-DECORATION: none; BACKGROUND: #f1dca9; COLOR: #570000; DISPLAY: block
+}
+DIV.lable A:hover SPAN {
+	TEXT-DECORATION: none; BACKGROUND: url(../image/lablecur.jpg) no-repeat right top; COLOR: #570000; PADDING-LEFT: 15px; DISPLAY: block; PADDING-RIGHT: 15px
+}
+DIV.lable A.lablecur {
+	TEXT-DECORATION: none; BACKGROUND: #f1dca9; COLOR: #570000; DISPLAY: block
+}
+DIV.lable A.lablecur SPAN {
+	TEXT-DECORATION: none; BACKGROUND: url(../image/lablecur.jpg) no-repeat right top; COLOR: #570000; PADDING-LEFT: 15px; DISPLAY: block; PADDING-RIGHT: 15px
+}
+DIV.scrol {
+	OVERFLOW: auto
+}
+DIV.scrol TABLE {
+	WIDTH: 100%
+}
+DIV.scrol TABLE TD {
+	WHITE-SPACE: nowrap
+}
+DIV.errorpage {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 679px; BACKGROUND: url(../image/error_bg.jpg) repeat-y left top; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 50px auto 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.errorpage DIV.top {
+	BACKGROUND: url(../image/error_top.jpg) no-repeat left top; MIN-HEIGHT: 280px
+}
+DIV.errorpage DIV.top DIV.button {
+	HEIGHT: 38px; PADDING-BOTTOM: 50px; PADDING-TOP: 130px; PADDING-LEFT: 480px; PADDING-RIGHT: 93px
+}
+DIV.errorpage DIV.top DIV.button A.back {
+	TEXT-DECORATION: none; HEIGHT: 38px; WIDTH: 106px; BACKGROUND: url(../image/back_1.jpg) no-repeat left top; DISPLAY: block
+}
+DIV.errorpage DIV.top DIV.button A.back:hover {
+	BACKGROUND: url(../image/back_2.jpg) no-repeat left top
+}
+DIV.errorpage DIV.top DIV.button A.close {
+	TEXT-DECORATION: none; HEIGHT: 38px; WIDTH: 106px; BACKGROUND: url(../image/close_1.jpg) no-repeat left top; DISPLAY: block
+}
+DIV.errorpage DIV.top DIV.button A.close:hover {
+	BACKGROUND: url(../image/close_2.jpg) no-repeat left top
+}
+DIV.errorpage DIV.top DIV.content {
+	MARGIN: 10px 170px 5px 80px
+}
+DIV.errorpage DIV.top DIV.content P {
+	FONT-SIZE: 13px; COLOR: #c00; TEXT-ALIGN: left; LETTER-SPACING: 1px
+}
+DIV.errorpage DIV.bottom {
+	HEIGHT: 34px; BACKGROUND: url(../image/error_bottom.jpg) no-repeat left bottom
+}
+TD {
+	PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TD.l {
+	TEXT-ALIGN: left
+}
+TD.c {
+	PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+TD.n {
+	WHITE-SPACE: nowrap
+}
+TABLE.form TH.t {
+	VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+DIV.articleview {
+	BORDER-TOP: #c49760 1px solid; HEIGHT: 320px; BORDER-RIGHT: #c49760 1px solid; BACKGROUND: #fff; BORDER-BOTTOM: #c49760 1px solid; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 15px; MIN-HEIGHT: 320px; BORDER-LEFT: #c49760 1px solid; PADDING-RIGHT: 15px
+}
+TABLE.classicLook TD {
+	FONT: 12px/150% "????",Arial,sans-serif
+}
+TABLE.classicLook TD A {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 13px/150% "????",Arial,sans-serif; PADDING-LEFT: 1px; LETTER-SPACING: 2px; PADDING-RIGHT: 1px
+}
+TD.classicLook0 {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TD.classicLook1 {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TD.classicLook2 {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TD.classicLook3 {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TD.classicLook4 {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TD.classicLook5 {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TD.classicLook6 {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TD.classicLook7 {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TR.Paging TH {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px
+}
+TR.Paging TD {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px
+}
+TABLE.classicLookPaging TH {
+	
+}
+TABLE.classicLookPaging TR.classicLookPaging TH {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px
+}
+TABLE.classicLookPaging TR.classicLookPaging TD {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px
+}
+TABLE.classicLookPaging A {
+	DISPLAY: block
+}
+TABLE.classicLookPaging A:link {
+	COLOR: #000
+}
+TABLE.classicLookPaging A:visited {
+	COLOR: #000
+}
+TABLE.classicLookPaging A:hover {
+	COLOR: #960
+}
+SPAN.goto {
+	BORDER-TOP: #c00 1px solid; BORDER-RIGHT: #c00 1px solid; BACKGROUND: #eee; BORDER-BOTTOM: #c00 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 20px; BORDER-LEFT: #c00 1px solid; PADDING-RIGHT: 20px
+}
+DIV.wrap {
+	WIDTH: 92%; MARGIN: 0px auto
+}
+DIV.week TABLE {
+	BORDER-TOP: #ead171 1px solid; WIDTH: 100%
+}
+DIV.week TABLE TD {
+	VERTICAL-ALIGN: top
+}
+DIV.week TABLE TD A {
+	CURSOR: pointer; TEXT-DECORATION: none; DISPLAY: block
+}
+DIV.week TABLE TD A SPAN {
+	FONT-SIZE: 12px; HEIGHT: 20px; FONT-FAMILY: 20px Arial; FONT-VARIANT: normal; BACKGROUND: url(../image/week_bg.jpg) repeat-x left top; BORDER-BOTTOM: #ead171 1px solid; FONT-WEIGHT: normal; COLOR: #000; FONT-STYLE: normal; TEXT-ALIGN: center; DISPLAY: block
+}
+DIV.week TABLE TD.cur A SPAN {
+	BACKGROUND: #c8d6fb; COLOR: #fff
+}
+DIV.week TABLE TD.select A {
+	BACKGROUND: url(../image/select.gif) no-repeat center bottom; PADDING-BOTTOM: 10px
+}
+DIV.week TABLE TD.select A SPAN {
+	COLOR: #f90
+}
+DIV.curweek {
+	FONT-SIZE: 12px; FONT-FAMILY: 150% Arial; FONT-VARIANT: normal; BORDER-BOTTOM: #c49760 1px solid; FONT-WEIGHT: normal; COLOR: #000; FONT-STYLE: normal; TEXT-ALIGN: right; PADDING-TOP: 5px; PADDING-RIGHT: 8px
+}
+DIV.curweek STRONG {
+	FONT-SIZE: 12px; FONT-FAMILY: 150% Arial; FONT-VARIANT: normal; FONT-WEIGHT: normal; COLOR: #f90; FONT-STYLE: normal
+}
+DIV.week {
+	PADDING-BOTTOM: 15px
+}
+DIV.block {
+	MARGIN-BOTTOM: 30px; WIDTH: 48%; FLOAT: left; MARGIN-LEFT: 15px
+}
+DIV.block DIV.title {
+	MARGIN-BOTTOM: 2px; HEIGHT: 18px; WIDTH: 100%; BACKGROUND: url(../image/title_bg.gif) #f6f0ce no-repeat right top; BORDER-BOTTOM: #c49760 1px solid; PADDING-BOTTOM: 1px
+}
+DIV.block DIV.title DIV.titletext {
+	HEIGHT: 18px; BACKGROUND: url(../image/title_left.gif) no-repeat left bottom; FLOAT: left; TEXT-ALIGN: left
+}
+DIV.block DIV.title DIV.titletext SPAN {
+	FONT-SIZE: 12px; FONT-FAMILY: 16px Arial; FONT-VARIANT: normal; FONT-WEIGHT: normal; COLOR: #000; FONT-STYLE: normal; PADDING-LEFT: 30px; LETTER-SPACING: 1px
+}
+DIV.block DIV.title DIV.time {
+	FLOAT: right; TEXT-ALIGN: left
+}
+DIV.block DIV.title DIV.time SPAN.t {
+	FONT-SIZE: 12px; FONT-FAMILY: 18px Arial; FONT-VARIANT: normal; FONT-WEIGHT: normal; COLOR: #600; FONT-STYLE: normal; LETTER-SPACING: 1px; PADDING-RIGHT: 45px
+}
+DIV.block DIV.title DIV.time A {
+	TEXT-DECORATION: none; MARGIN-RIGHT: 20px
+}
+DIV.block DIV.title DIV.time A IMG {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: middle; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+DIV.block DIV.title DIV.time A SPAN {
+	DISPLAY: none
+}
+DIV.block DIV.content {
+	BORDER-TOP: #c49760 1px dashed; BORDER-RIGHT: #c49760 1px dashed; BACKGROUND: #f5f5f5; MARGIN-TOP: 5px; BORDER-BOTTOM: #c49760 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #c49760 1px dashed
+}
+DIV.block DIV.content P {
+	FONT-SIZE: 12px; FONT-FAMILY: 150% Arial; FONT-VARIANT: normal; FONT-WEIGHT: normal; PADDING-BOTTOM: 10px; FONT-STYLE: normal; PADDING-TOP: 10px; PADDING-LEFT: 15px; LETTER-SPACING: 1px; PADDING-RIGHT: 15px
+}
+DIV.block DIV.more {
+	TEXT-ALIGN: right; PADDING-RIGHT: 10px
+}
+DIV.block DIV.more A {
+	FONT-SIZE: 12px; FONT-FAMILY: 150% Arial; FONT-VARIANT: normal; FONT-WEIGHT: normal; COLOR: #00f; FONT-STYLE: normal
+}
+DIV.block DIV.more A:hover {
+	TEXT-DECORATION: none; COLOR: #960
+}
+#loading {
+	FONT-SIZE: 15px; BORDER-TOP: #218dce 1px solid; HEIGHT: 100px; BORDER-RIGHT: #218dce 1px solid; WIDTH: 400px; BACKGROUND: #fff; MARGIN-TOP: -50px; BORDER-BOTTOM: #218dce 1px solid; POSITION: absolute; FONT-WEIGHT: bold; COLOR: #ff3300; MARGIN-LEFT: -200px; LEFT: 50%; BORDER-LEFT: #218dce 1px solid; Z-INDEX: 101; LETTER-SPACING: 2px; TOP: 50%
+}
+#loading P {
+	HEIGHT: 70px; POSITION: relative; MARGIN: 15px
+}
+#loading P SPAN {
+	BACKGROUND: url(../image/load.gif) no-repeat left center; TEXT-ALIGN: left; PADDING-LEFT: 40px; DISPLAY: block; LINE-HEIGHT: 20px
+}
+#loading P .button {
+	RIGHT: 0px; POSITION: absolute; BOTTOM: 0px
+}
+#overlay {
+	BACKGROUND: #ccc; POSITION: absolute; LEFT: 0px; Z-INDEX: 100; TOP: 0px
+}
+DIV.container {
+	OVERFLOW: auto; WIDTH: 92%; MARGIN: 0px auto
+}
+DIV.container TABLE {
+	WIDTH: 100%
+}
+DIV.container TABLE TH {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+TABLE.subtable {
+	HEIGHT: 100%; WIDTH: 100%
+}
+TABLE.subtable TH {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.subtable TR.firstRow TH {
+	BORDER-BOTTOM: #fff 1px solid
+}
+TABLE.subtable TR.lastRow TH {
+	BORDER-RIGHT: #fff 1px solid
+}
+TABLE.subtable TR.lastRow TH.last {
+	BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.datalist TBODY TD.subtable {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+TABLE.subtable TD.right {
+	BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.subtable TR.firstRow TD {
+	BORDER-TOP-WIDTH: 0px
+}
+TABLE.buttondatalist {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px
+}
+TABLE.buttondatalist TR {
+	BORDER-BOTTOM-WIDTH: 0px
+}
+TABLE.buttondatalist TH {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px
+}
+TABLE.innerdatalist {
+	WIDTH: 100%; MARGIN-TOP: 5px; BORDER-BOTTOM: #fff 1px solid; BORDER-LEFT: #fff 1px solid
+}
+TABLE.innerdatalist TD {
+	WIDTH: 50%; TEXT-ALIGN: center
+}
+DIV.mybottomdiv TABLE.form TD {
+	TEXT-ALIGN: center
+}
+#applicationOneDiv {
+	WIDTH: 92%
+}
+.gotocenter {
+	TEXT-ALIGN: center
+}
+#mycenterdiv {
+	WIDTH: 800px
+}
+#mycenterdiv DIV.scrollable {
+	TEXT-ALIGN: left
+}
+#mycenterdiv DIV.scrollable DIV.items DIV {
+	
+}
+TABLE.tddatalist {
+	WIDTH: 100%; BORDER-BOTTOM-WIDTH: 0px
+}
+TABLE.tddatalist TR {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.tddatalist TBODY TD {
+	BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.tdcentertable {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 100%; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.tdcentertable TBODY TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.tdcentertable TR {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+#applicationOneDiv DIV.subtitle {
+	WIDTH: 100%
+}
+#applicationOneDiv TABLE.form {
+	WIDTH: 100%
+}
+#dddd DIV.datalist {
+	WIDTH: 92%
+}
+TABLE.form TD.tdnopadding {
+	PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+TABLE.form TD.tdnopadding TABLE {
+	MARGIN-BOTTOM: 0px; WIDTH: 100%
+}
+TABLE.form TD.tdnopadding TABLE TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.form TD.tdnopadding TABLE TD.tdnoborder {
+	BORDER-BOTTOM-WIDTH: 0px
+}
+TABLE.form TABLE.addtable {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 100%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.form TABLE.addtable TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.form TABLE.addtable TD.addtabletd1 {
+	
+}
+TABLE.form TABLE.addtable TABLE.mytdtable {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 100%; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.form TABLE.addtable TABLE.mytdtable TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.form TABLE.addtable TABLE.mytdtable TH {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-LEFT: 10px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.form TABLE.addtable TABLE.mytdtable TD.addtabletd1 {
+	BORDER-BOTTOM-WIDTH: 0px
+}
+TABLE.form TABLE.addtable TABLE.mytdtable TD.addtabletd1 {
+	BORDER-BOTTOM-WIDTH: 0px
+}
+TABLE.form TABLE.addtable TD.myright {
+	WIDTH: 100px; BORDER-BOTTOM: #fff 1px solid
+}
+TABLE.form TABLE.addtable TD.myleft {
+	WIDTH: 50px; BORDER-BOTTOM: #fff 1px solid
+}
+TABLE.form TABLE.addtable TD.mycenter {
+	BORDER-BOTTOM: #fff 1px solid
+}
+TABLE.form TD.myadd {
+	BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+TABLE.myformcss TR {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+#tableFloderList {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.modeform2 {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+#buttonSuspendStudent {
+	MARGIN-LEFT: 10px
+}
+INPUT.myinputtext {
+	HEIGHT: 16px
+}
+#hintInfo {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND: url(../image/back-center.png) repeat-y center center; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: center; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+#hintInfotop {
+	BACKGROUND: url(../image/back-top.png) no-repeat center top; POSITION: relative
+}
+#hintInfobottom {
+	BACKGROUND: url(../image/back-bottom.png) no-repeat center bottom; PADDING-TOP: 40px
+}
+#mysub1 {
+	WIDTH: 92%; MARGIN-TOP: 15px
+}
+#mysub2 {
+	WIDTH: 92%
+}
+#mysub3 {
+	WIDTH: 92%
+}
+DIV.mytitletext {
+	
+}
+DIV.myshowmessage {
+	WIDTH: 92%; BACKGROUND: #ebebeb; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+DIV.mythebutton {
+	PADDING-BOTTOM: 40px; TEXT-ALIGN: center; PADDING-TOP: 15px
+}
+#myablock {
+	CURSOR: pointer; HEIGHT: 30px; WIDTH: 30px; RIGHT: 10px; POSITION: absolute; TOP: 10px
+}
+DIV.mythetitle {
+	FONT-SIZE: 13px; POSITION: absolute; COLOR: #fff; LEFT: 10px; TOP: 5px
+}
+#mythetitle {
+	FONT-SIZE: 13px; POSITION: absolute; COLOR: #fff; LEFT: 10px; TOP: 5px
+}
+#stuInfoSearchForm {
+	PADDING-BOTTOM: 15px
+}
+DIV.mybutton {
+	PADDING-BOTTOM: 10px; PADDING-TOP: 10px; _margin-top: 10px; _margin-bottom: 10px
+}
+#cousrinfodatalist {
+	WIDTH: 100%
+}
+#cousetd {
+	PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+#divCourseSubmit {
+	PADDING-TOP: 10px
+}
+DIV.fullwidth {
+	WIDTH: 92%
+}
+TABLE.fullwidth {
+	WIDTH: 92%
+}
+#buttonCommit {
+	MARGIN-TOP: 10px
+}
+#buttonBack {
+	MARGIN-TOP: 10px
+}
+TABLE.addtable TABLE.datalistc TR {
+	BORDER-TOP: #fff 1px solid; BORDER-LEFT: #fff 1px solid
+}
+TABLE.form TABLE.addtable TABLE.addtabletd1 {
+	BORDER-BOTTOM: #fff 1px solid
+}
+#tableFloderList TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT: #fff 1px solid; BORDER-BOTTOM: #fff 1px solid; BORDER-TOP-WIDTH: 0px
+}
+#tableFloderList {
+	MARGIN-BOTTOM: 10px; BORDER-TOP: #fff 1px solid; BORDER-RIGHT: #fff 1px solid; BORDER-BOTTOM: #fff 1px solid; BORDER-LEFT: #fff 1px solid
+}
+#tableFloderList TABLE.modeform2 TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+.unavailable {
+	COLOR: red
+}
+.unuse {
+	TEXT-DECORATION: underline; COLOR: red
+}
+.ause {
+	TEXT-DECORATION: underline; COLOR: #000
+}
+DIV.mybutton {
+	PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.marginbottom {
+	MARGIN-BOTTOM: 10px
+}
+.tablehidden {
+	
+}
+#seconddiv {
+	MARGIN-TOP: 15px
+}
+#rightdiv .datalist TR TD.mytdclass {
+	FONT-WEIGHT: bold; COLOR: #cc0033
+}
+#seconddiv DIV.subtitle DIV.titletext {
+	POSITION: static
+}
+#slowup {
+	HEIGHT: 11px; BACKGROUND: url(../image/slowupback.jpg) repeat-x left center; MARGIN-TOP: 0px
+}
+#updown {
+	CURSOR: pointer; HEIGHT: 10px; WIDTH: 38px; MARGIN-LEFT: auto; DISPLAY: block; MARGIN-RIGHT: auto
+}
+#container {
+	BACKGROUND: url(../image/leftimg.jpg) repeat-y left top
+}
+#bodycer {
+	BACKGROUND: url(../image/rightimg.jpg) repeat-y right top; PADDING-BOTTOM: 20px; PADDING-TOP: 20px
+}
+#slowleft {
+	HEIGHT: 11px; BACKGROUND: url(../image/leftcoin.jpg) no-repeat left bottom
+}
+#slowright {
+	HEIGHT: 11px; BACKGROUND: url(../image/rightcoin.jpg) no-repeat right bottom
+}
+DIV.titlewrap {
+	TEXT-ALIGN: center; DISPLAY: block
+}
+DIV.titlewrap .title {
+	FONT-SIZE: 14px; OVERFLOW: visible; WIDTH: 110px; BACKGROUND: url(../image/titleback.jpg) no-repeat left center; FONT-WEIGHT: bold; COLOR: #a80000; PADDING-LEFT: 15px; MARGIN-LEFT: auto; DISPLAY: block; LETTER-SPACING: 2px; LINE-HEIGHT: 20px; MARGIN-RIGHT: auto
+}
+#header {
+	HEIGHT: auto
+}
+#header .header {
+	HEIGHT: auto
+}
+A.down {
+	BACKGROUND: url(../image/down.jpg) no-repeat center bottom
+}
+A.up {
+	BACKGROUND: url(../image/up.jpg) no-repeat center bottom
+}
+DIV.topwel {
+	HEIGHT: 25px; POSITION: absolute; FONT-WEIGHT: bold; COLOR: #2c56af; TEXT-ALIGN: left; PADDING-LEFT: 15px; MARGIN-LEFT: 0px; LEFT: 0px; DISPLAY: block; BOTTOM: 0px
+}
+DIV.topwel SPAN.objectom {
+	FONT-WEIGHT: normal; MARGIN-LEFT: 0px
+}
+DIV.topwel SPAN {
+	MARGIN-LEFT: 25px
+}
+#seconddiv #leftdiv .up {
+	BACKGROUND: url(../image/upback.jpg) rgb(250,241,201) no-repeat right center
+}
+#seconddiv #leftdiv .down {
+	BACKGROUND: url(../image/downback.jpg) rgb(250,241,201) no-repeat right center
+}
+#seconddiv #rightdiv .up {
+	BACKGROUND: url(../image/upback.jpg) rgb(250,241,201) no-repeat right center
+}
+#seconddiv #rightdiv .down {
+	BACKGROUND: url(../image/downback.jpg) rgb(250,241,201) no-repeat right center
+}
+TD.formclassquery DIV {
+	HEIGHT: 24px; WIDTH: 220px; FLOAT: left; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; LINE-HEIGHT: 20px
+}
+TABLE.nonestyle {
+	BORDER-TOP: #ffffff 0px; BORDER-RIGHT: #ffffff 0px; BORDER-BOTTOM: #ffffff 0px; BORDER-LEFT: #ffffff 0px
+}

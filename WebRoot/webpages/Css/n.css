@@ -1,0 +1,119 @@
+﻿.bbody{ margin:6px auto; width:98%; overflow:hidden;}
+.kuang {
+	font-family: "新宋体", Arial;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #6666666;
+	text-decoration: none;
+	border: 1px solid #A1DEFD;
+}
+.xh {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.heic {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.huang {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: normal;
+	color: #9A742C;
+	text-decoration: none;
+}
+
+
+.zw {
+	font-family: "新宋体", Arial;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: none;
+	border-top-color: #C7C7C7;
+	border-right-color: #C7C7C7;
+	border-bottom-color: #C7C7C7;
+	border-left-color: #C7C7C7;
+}
+.bai-x {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.zws {
+	font-family: "新宋体", Arial;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+.time {
+	font-family: "新宋体", Arial;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #999999;
+	text-decoration: none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: none;
+	border-top-color: #C7C7C7;
+	border-right-color: #C7C7C7;
+	border-bottom-color: #C7C7C7;
+	border-left-color: #C7C7C7;
+}
+.biao {
+	font-family: "新宋体", Arial;
+	line-height: 20px;
+	font-weight: bold;
+	color: #00658F;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.biaos {
+	font-family: "新宋体", Arial;
+	line-height: 20px;
+	font-weight: normal;
+	color: #00658F;
+	text-decoration: none;
+	font-size: 12px;
+}
+select{
+	border: 1px solid #4EA0D1;
+	background-color: #FFFFFF;
+	font-family: "新宋体", Arial;
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: normal;
+	color:#000000;
+	text-decoration: none;
+}
+body{ font-size:12px;}
+a,a:hover{ color:#000000}

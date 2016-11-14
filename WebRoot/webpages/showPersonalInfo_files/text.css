@@ -1,0 +1,270 @@
+HTML {
+	BACKGROUND: #fff
+}
+BODY {
+	FONT-SIZE: 13px; FONT-FAMILY: "????",Arial,verdana,sans-serif; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 150%; PADDING-RIGHT: 0px
+}
+DIV.pre {
+	OVERFLOW: hidden; WIDTH: 540px
+}
+PRE {
+	WORD-WRAP: break-word; WIDTH: 540px; WORD-BREAK: break-all; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px
+}
+DIV.newpre {
+	OVERFLOW: hidden; WIDTH: 95%
+}
+DIV.newpre PRE {
+	WORD-WRAP: break-word; WIDTH: 99%; WORD-BREAK: break-all; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px
+}
+A {
+	FONT-SIZE: 13px; TEXT-DECORATION: underline; FONT-FAMILY: "????",Arial,sans-serif; COLOR: #000; LETTER-SPACING: 1px
+}
+A:hover {
+	TEXT-DECORATION: none; COLOR: #00f
+}
+A.statusnatural {
+	TEXT-DECORATION: none; COLOR: #060
+}
+A.statusnatural:hover {
+	TEXT-DECORATION: underline; COLOR: #060
+}
+A.statushalt {
+	TEXT-DECORATION: none; COLOR: #c00
+}
+A.statushalt:hover {
+	TEXT-DECORATION: underline; COLOR: #c00
+}
+A.download {
+	TEXT-DECORATION: none; COLOR: #be620e
+}
+A.download:hover {
+	TEXT-DECORATION: underline; COLOR: #b68229
+}
+TABLE.datalist TBODY TD A.un {
+	TEXT-DECORATION: underline
+}
+TABLE.datalist TBODY TD A.un:hover {
+	TEXT-DECORATION: none
+}
+A.systemset {
+	TEXT-DECORATION: none; COLOR: #000000; LETTER-SPACING: 2px
+}
+A.systemset:hover {
+	TEXT-DECORATION: none; COLOR: #a76501; LETTER-SPACING: 2px
+}
+EM {
+	FONT: 13px/100% "????",Arial,sans-serif; LETTER-SPACING: 1px
+}
+TD {
+	FONT: 13px/100% "????",Arial,sans-serif; LETTER-SPACING: 1px
+}
+TH {
+	FONT: 13px/100% "????",Arial,sans-serif; LETTER-SPACING: 1px
+}
+EM.statushalt {
+	COLOR: #c00; FONT-STYLE: normal; LINE-HEIGHT: 150%
+}
+EM.statusnatural {
+	COLOR: #060; FONT-STYLE: normal; LINE-HEIGHT: 150%
+}
+EM.explain {
+	COLOR: #993300; FONT-STYLE: normal
+}
+EM.hint {
+	FONT-WEIGHT: bold; COLOR: #993300; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+EM.error {
+	COLOR: #f00; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+EM.star {
+	FONT-SIZE: 15px; COLOR: #930; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 10px; LINE-HEIGHT: 70%; PADDING-RIGHT: 10px
+}
+EM.perm {
+	COLOR: #606
+}
+IMG {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+TEXTAREA {
+	HEIGHT: 60px; WIDTH: 80%
+}
+TEXTAREA {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+INPUT.input {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+INPUT.input {
+	HEIGHT: 18px
+}
+INPUT.sffocus {
+	HEIGHT: 18px
+}
+INPUT.input:focus {
+	HEIGHT: 18px
+}
+INPUT.sffocus {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BACKGROUND: #f0f9fb; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+TEXTAREA.sffocus {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BACKGROUND: #f0f9fb; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+TEXTAREA:focus {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BACKGROUND: #f0f9fb; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+INPUT.input:focus {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BACKGROUND: #f0f9fb; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+INPUT.mybutton1 {
+	BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 0px; CURSOR: pointer; TEXT-DECORATION: none; HEIGHT: 25px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 111px; BACKGROUND: url(../image/lookatsay.png) #fef9e6 no-repeat center center; BORDER-BOTTOM-WIDTH: 0px; MARGIN-TOP: 1px; LETTER-SPACING: 1px; LINE-HEIGHT: 90%; BORDER-TOP-WIDTH: 0px; _width: 150px; _height: 37px; verflow: visible; _display: inline
+}
+INPUT.thebn {
+	FONT-SIZE: 12px; WIDTH: auto
+}
+INPUT.button {
+	FONT-SIZE: 12px; OVERFLOW: visible; TEXT-DECORATION: none; BORDER-TOP: #d18c0c 1px solid; HEIGHT: 18px; FONT-FAMILY: "????"; BORDER-RIGHT: #d18c0c 1px solid; BACKGROUND: url(../image/button1.jpg) #fef9e6 repeat-x left bottom; MARGIN-TOP: 1px; BORDER-BOTTOM: #d18c0c 1px solid; COLOR: #333333; PADDING-BOTTOM: 0px !important; PADDING-TOP: 2px !important; PADDING-LEFT: 10px !important; BORDER-LEFT: #d18c0c 1px solid; LETTER-SPACING: 1px; LINE-HEIGHT: 90%; PADDING-RIGHT: 10px !important
+}
+INPUT.outie6button {
+	TEXT-ALIGN: center; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; _width: 100px; _background-attachment: none
+}
+INPUT.button:hover {
+	FONT-SIZE: 12px; OVERFLOW: visible; TEXT-DECORATION: none; BORDER-TOP: #d18c0c 1px solid; HEIGHT: 18px; FONT-FAMILY: "????"; BORDER-RIGHT: #d18c0c 1px solid; BACKGROUND: url(../image/button.jpg) #fef9e6 repeat-x left top; MARGIN-TOP: 1px; BORDER-BOTTOM: #d18c0c 1px solid; COLOR: #333333; PADDING-BOTTOM: 0px !important; PADDING-TOP: 2px !important; PADDING-LEFT: 10px !important; BORDER-LEFT: #d18c0c 1px solid; LETTER-SPACING: 1px; LINE-HEIGHT: 90%; PADDING-RIGHT: 10px !important
+}
+INPUT.button1 {
+	FONT-SIZE: 12px; TEXT-DECORATION: none; BORDER-TOP: #d18c0c 1px solid; HEIGHT: 18px !important; FONT-FAMILY: "????"; BORDER-RIGHT: #d18c0c 1px solid; BACKGROUND: url(../image/button1.jpg) #fef9e6 repeat-x left bottom; BORDER-BOTTOM: #d18c0c 1px solid; COLOR: #333333; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 6px; BORDER-LEFT: #d18c0c 1px solid; LETTER-SPACING: 1px; PADDING-RIGHT: 6px
+}
+INPUT.button1:hover {
+	BACKGROUND: url(../image/button.jpg) #fef9e6 repeat-x left top
+}
+INPUT.expandall {
+	BORDER-LEFT-WIDTH: 0px; HEIGHT: 18px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 48px; BACKGROUND: url(../image/expandAllButton.png) no-repeat 80px center; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+SPAN.select {
+	OVERFLOW: hidden; HEIGHT: 18px; VERTICAL-ALIGN: top !important; MARGIN: -5px 0px 0px 2px; Z-INDEX: 1
+}
+SPAN.select SELECT {
+	FONT-SIZE: 12px; BORDER-TOP: #000 1px solid; HEIGHT: 20px !important; BORDER-RIGHT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; COLOR: #000; BORDER-LEFT: #000 1px solid; MARGIN: -2px; Z-INDEX: 1
+}
+SELECT.multiple {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+DIV.c {
+	TEXT-ALIGN: center; MARGIN: 0px auto
+}
+DIV.pre {
+	OVERFLOW: hidden; WIDTH: 540px
+}
+TD.classicLookSummary B {
+	FONT-WEIGHT: normal; COLOR: #000066; MARGIN: 0px 3px
+}
+INPUT.classicLook {
+	BORDER-TOP: #000 1px solid; HEIGHT: 18px; BORDER-RIGHT: #000 1px solid; WIDTH: 30px; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; MARGIN-RIGHT: 5px
+}
+INPUT.classicLook:focus {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BACKGROUND: #f0f9fb; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+INPUT.ItemsPerPageSubmitButton {
+	FONT-SIZE: 12px; OVERFLOW: visible; TEXT-DECORATION: none; BORDER-TOP: #d18c0c 1px solid; HEIGHT: 18px; FONT-FAMILY: "????"; BORDER-RIGHT: #d18c0c 1px solid; WIDTH: 40px; BACKGROUND: url(../image/button1.jpg) #fef9e6 repeat-x left bottom; MARGIN-TOP: 1px; BORDER-BOTTOM: #d18c0c 1px solid; COLOR: #333333; PADDING-BOTTOM: 0px !important; PADDING-TOP: 2px !important; PADDING-LEFT: 10px !important; BORDER-LEFT: #d18c0c 1px solid; LETTER-SPACING: 1px; LINE-HEIGHT: 90%; PADDING-RIGHT: 10px !important
+}
+INPUT.ItemsPerPageSubmitButton:hover {
+	FONT-SIZE: 12px; OVERFLOW: visible; TEXT-DECORATION: none; BORDER-TOP: #d18c0c 1px solid; HEIGHT: 18px; FONT-FAMILY: "????"; BORDER-RIGHT: #d18c0c 1px solid; WIDTH: 40px; BACKGROUND: url(../image/button.jpg) #fef9e6 repeat-x left top; MARGIN-TOP: 1px; BORDER-BOTTOM: #d18c0c 1px solid; COLOR: #333333; PADDING-BOTTOM: 0px !important; PADDING-TOP: 2px !important; PADDING-LEFT: 10px !important; BORDER-LEFT: #d18c0c 1px solid; LETTER-SPACING: 1px; LINE-HEIGHT: 90%; PADDING-RIGHT: 10px !important
+}
+INPUT.ItemsPerPageInputBox {
+	BORDER-TOP: #000 1px solid; HEIGHT: 18px; BORDER-RIGHT: #000 1px solid; WIDTH: 30px; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; MARGIN-RIGHT: 5px
+}
+INPUT.ItemsPerPageInputBox:focus {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BACKGROUND: #f0f9fb; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+INPUT.goInput {
+	BORDER-TOP: #000 1px solid; HEIGHT: 18px; BORDER-RIGHT: #000 1px solid; WIDTH: 30px; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; MARGIN-RIGHT: 5px
+}
+INPUT.goInput:focus {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BACKGROUND: #f0f9fb; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+INPUT.goButton {
+	FONT-SIZE: 12px; OVERFLOW: visible; TEXT-DECORATION: none; BORDER-TOP: #d18c0c 1px solid; HEIGHT: 18px; FONT-FAMILY: "????"; BORDER-RIGHT: #d18c0c 1px solid; WIDTH: 40px; BACKGROUND: url(../image/button1.jpg) #fef9e6 repeat-x left bottom; MARGIN-TOP: 1px; BORDER-BOTTOM: #d18c0c 1px solid; COLOR: #333333; PADDING-BOTTOM: 0px !important; PADDING-TOP: 2px !important; PADDING-LEFT: 10px !important; BORDER-LEFT: #d18c0c 1px solid; LETTER-SPACING: 1px; LINE-HEIGHT: 90%; PADDING-RIGHT: 10px !important
+}
+INPUT.goButton:hover {
+	FONT-SIZE: 12px; OVERFLOW: visible; TEXT-DECORATION: none; BORDER-TOP: #d18c0c 1px solid; HEIGHT: 18px; FONT-FAMILY: "????"; BORDER-RIGHT: #d18c0c 1px solid; WIDTH: 40px; BACKGROUND: url(../image/button.jpg) #fef9e6 repeat-x left top; MARGIN-TOP: 1px; BORDER-BOTTOM: #d18c0c 1px solid; COLOR: #333333; PADDING-BOTTOM: 0px !important; PADDING-TOP: 2px !important; PADDING-LEFT: 10px !important; BORDER-LEFT: #d18c0c 1px solid; LETTER-SPACING: 1px; LINE-HEIGHT: 90%; PADDING-RIGHT: 10px !important
+}
+#error {
+	WIDTH: 677px; BACKGROUND: url(../image/ds_error_bg.jpg) repeat-y 0px 0px; MARGIN: 0px auto
+}
+#error DIV.top {
+	HEIGHT: 250px; BACKGROUND: url(../image/ds_error_top.jpg) no-repeat 0px 0px
+}
+#error DIV.button {
+	HEIGHT: 36px; WIDTH: 102px; PADDING-TOP: 138px; MARGIN-LEFT: 386px
+}
+#error DIV.button A {
+	TEXT-DECORATION: none; HEIGHT: 36px; BACKGROUND: url(../image/ds_back1.jpg) no-repeat 0px 0px; DISPLAY: block
+}
+#error DIV.button A:hover {
+	BACKGROUND: url(../image/ds_back2.jpg) no-repeat 0px 0px
+}
+#error DIV.errorStr {
+	FONT-SIZE: 14px; FONT-FAMILY: "????"; COLOR: #a20000; TEXT-ALIGN: left; MARGIN: 50px 100px 0px 70px; LETTER-SPACING: 2px; LINE-HEIGHT: 170%
+}
+#error DIV.bottom {
+	HEIGHT: 23px; BACKGROUND: url(../image/ds_error_bottom.jpg) no-repeat 0px bottom
+}
+#aerror {
+	OVERFLOW: hidden; WIDTH: 573px; BACKGROUND: url(../image/alumni_error4.jpg) repeat-y left top; TEXT-ALIGN: left; MARGIN: 0px auto
+}
+#aerror .etop {
+	HEIGHT: 182px; BACKGROUND: url(../image/alumni_error1.jpg) no-repeat
+}
+#aerror .etop DIV {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 47px; PADDING-LEFT: 81px; PADDING-RIGHT: 0px
+}
+#aerror .etop DIV A {
+	HEIGHT: 18px; WIDTH: 120px; BACKGROUND: url(../image/alumni_error5.gif) no-repeat; DISPLAY: block
+}
+#aerror .ebody {
+	BACKGROUND: url(../image/alumni_error2.jpg) no-repeat left top
+}
+#aerror .ebody .etext {
+	COLOR: #a20000; FONT: 13px/140% ""; MARGIN: 0px 115px 10px 58px; LETTER-SPACING: 1px
+}
+#aerror .efoot {
+	HEIGHT: 26px; BACKGROUND: url(../image/alumni_error3.jpg) no-repeat
+}
+DIV.alert_wrap {
+	WIDTH: 565px; BACKGROUND: url(../image/alert_bg.jpg) repeat-y left top; MARGIN: 100px auto 0px
+}
+DIV.alert_bottom {
+	BACKGROUND: url(../image/alert_bottom.jpg) no-repeat left bottom; PADDING-BOTTOM: 50px
+}
+DIV.alert_top {
+	BACKGROUND: url(../image/alert_top.jpg) no-repeat left top; PADDING-BOTTOM: 0px; PADDING-TOP: 60px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px
+}
+DIV.alert_content {
+	BACKGROUND: url(../image/alert_ico.jpg) no-repeat 10px top; COLOR: #333; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 20px; FONT: 13px/160% Arial; PADDING-LEFT: 120px; LETTER-SPACING: 1px; PADDING-RIGHT: 0px
+}
+DIV.alert_content UL {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0px 18px; PADDING-RIGHT: 0px
+}
+DIV.alert_button {
+	PADDING-BOTTOM: 20px; TEXT-ALIGN: center; PADDING-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+DIV.alert_button INPUT {
+	CURSOR: pointer; BORDER-TOP: #9bb5de 1px solid; HEIGHT: 24px; BORDER-RIGHT: #9bb5de 1px solid; BACKGROUND: url(../image/alert_button_bg.jpg) repeat-x left center; BORDER-BOTTOM: #9bb5de 1px solid; COLOR: #1e4f7b; FONT: 12px/24px Arial; BORDER-LEFT: #9bb5de 1px solid; LETTER-SPACING: 3px
+}
+#divCourseGroupInfo {
+	MARGIN-BOTTOM: 30px
+}
+.available {
+	COLOR: green
+}
+TD.myright {
+	TEXT-ALIGN: center
+}
+UNKNOWN {
+	TEXT-ALIGN: center
+}
+.myleft {
+	WIDTH: 80px
+}

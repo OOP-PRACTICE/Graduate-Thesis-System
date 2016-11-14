@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册-山东大学项目申报系统</title>
+<link href="Css/cb.css" rel="stylesheet" type="text/css" />
+<link href="Css/n.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+<!--
+.STYLE1 {
+	color: #ffffff;
+	font-size: 12px;
+}
+.STYLE6 {
+	font-size: 12px;
+	color: #5593ce;
+}
+.STYLE8 {color: #ffffff}
+.STYLE11 {font-size: 12px; color: #bab92b; }
+.STYLE12 {
+	color: #8da6c4;
+	font-size: 12px;
+}
+input{ width:180px;}
+select{ width:150px;}
+-->
+</style>
+<script>
+	function gooo(id){
+		if(id!=""){
+		location.href='?x='+id;
+		}
+	}
+ 	function checkf(){
+		f=document.form1;
+		if(f.truename.value==""){
+		  alert("请填写姓名");
+		  return false;
+		}
+		if(f.username.value==""){
+		  alert('用户名不能为空');
+		  return false;
+		}
+		if(f.password.value==""){
+		   alert("密码不能为空");
+		   return false;
+		}
+		if(f.password.value!=f.repassword.value){
+			alert('密码不一致');
+			return false;
+		}
+		if(f.zhiwu.value==""){
+			alert("职务不能为空");
+			return false;
+		}
+		if(f.xueke.value==""){
+			alert("学科不能为空");
+			return false;
+		}
+		
+		if(f.tel.value==""){
+			alert("电话不能为空");
+			return false;
+		}
+		
+		
+	}
+	function checkusername(name){
+ 
+	jQuery(function() {
+	  // Your code using failsafe $ alias here...
+		jQuery.ajax({
+		   type: "GET",
+		   url: "checkusername.php?name="+name+"&id=1&rand="+Math.random(),
+		   dataType: 'html',
+		   success: function(msg){
+			   //alert(msg);
+			 
+			 	document.getElementById("username_result").innerHTML=msg;
+			 
+		   }
+		 });
+	});
+
+ 
+	}
+</script>
+<script src="Scripts/jquery.js" language="javascript"></script>
+</head>
+
+<body>
+<table width="100%" height="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="594"  align="center" valign="top" background="Images/bj.gif">
+	<form id="form1" name="form1" method="post" action="reg.php?action=save" onsubmit="return checkf();">
+	<table width="465" height="314" border="0" align="center" cellpadding="0" cellspacing="0" >
+      <tr>
+        <td  height="51" colspan="3"><img src="Picture/top.gif" width="464" height="77" /></td>
+      </tr>
+      <tr>
+        <td width="16" height="453" background="Images/bj1.gif">&nbsp;</td>
+        <td width="500" align="center" valign="middle" background="Images/bj2.gif"><table width="100%" height="403" border="0" cellpadding="0" cellspacing="0">
+          <tr bordercolor="#185089">
+            <td height="22" colspan="4" align="left" style="border-bottom:solid #8BA9C5 2px"><span class="STYLE8"><img src="Picture/yh.gif" width="76" height="22" /></span></td>
+            </tr>
+          <tr>
+            <td height="24" align="right"><span class="STYLE1">学科：</span></td>
+            <td colspan="2" align="left">
+              <label>
+                <select name="xueke" id="xueke" onchange="gooo(this.value)">
+				<option value="" >请选择...</option>
+								 <option value="8" >文科</option>
+				 				 <option value="9" >理科</option>
+				 				 <option value="10" >工科</option>
+				 				 <option value="11" >医科</option>
+				 				 <option value="18" >其他</option>
+				                 </select>
+                </label>            </td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="30" align="right"><span class="STYLE1">所属学院：</span></td>
+            <td colspan="2" align="left">
+			
+			<select name="typefs" id="typefs"  onchange="setson()" >
+        <option value="">请选择</option>
+		      </select>			            </td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="25" align="right"><span class="STYLE1">实验室名称：</span></td>
+            <td colspan="2" align="left">
+			 <select name="types" id="types" style=" width:150px" >
+      </select>
+	  
+      <script language="JavaScript" type="text/javascript"><!--
+function setson() {
+ //alert(document.form1.typef.value);
+   switch (document.form1.typefs.value) {
+   
+  
+     case "" :
+       var typesOptions = new Array("", "");
+       break;
+  
+   
+		   }
+   document.form1.types.options.length = 0;
+   for(var i = 0; i < typesOptions.length/2; i++) {
+     document.form1.types.options[i]=new Option(typesOptions[i*2],typesOptions[i*2+1]);
+     if (document.form1.types.options[i].value=="") document.form1.types.selectedIndex = i;
+   }
+}
+function initprovson() {
+   for(var i = 0; i < document.form1.typefs.options.length; i++) {
+     if (document.form1.typefs.options[i].value=="") document.form1.typefs.selectedIndex = i;
+   }
+   setson();
+}
+ setson();
+  document.getElementById("xueke").value="";
+//onload=initprovson;
+-->
+      </script>			</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="19%" height="23" align="right"><span class="STYLE1">姓名：</span></td>
+            <td colspan="2" align="left"><input name="truename" type="text" id="truename" /></td>
+            <td width="27%" align="left"><span class="STYLE11">*请填写真实姓名</span></td>
+          </tr>
+          <tr>
+            <td height="24" align="right"><span class="STYLE1">登录名：</span></td>
+            <td colspan="2" align="left"><input name="username" type="text" id="username" onkeyup="checkusername(this.value)" /></td>
+            <td align="left"><span class="STYLE11" id="username_result">*可填写真实姓名</span></td>
+          </tr>
+          <tr>
+            <td height="22" align="right"><span class="STYLE1">密码：</span></td>
+            <td colspan="2" align="left"><input name="password" type="password" id="password" /></td>
+            <td align="left"><span class="STYLE11">*输入六位密码</span></td>
+          </tr>
+          <tr>
+            <td height="26" align="right"><span class="STYLE1">重复密码：</span></td>
+            <td colspan="2" align="left"><input name="repassword" type="password" id="repassword" /></td>
+            <td align="left"><span class="STYLE11">*请再输入一遍</span></td>
+          </tr>
+          <tr>
+            <td height="20" align="right"><span class="STYLE1">职务：</span></td>
+            <td colspan="2" align="left"><input name="zhiwu" type="text" id="zhiwu" /></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="23" align="right"><span class="STYLE1">职称：</span></td>
+            <td colspan="2" align="left"><input name="zhicheng" type="text" id="zhicheng" /></td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td height="31" align="right"><span class="STYLE1">联系电话：</span></td>
+            <td width="23%" align="left"><input name="tel" type="text" id="tel"  style=" width:100px"/></td>
+            <td align="center" class="STYLE1">办公电话：</td>
+            <td><input name="tel_office" type="text" id="tel_office" size="15" style=" width:100px"/></td>
+          </tr>
+          <tr>
+            <td height="27" align="right"><span class="STYLE1">电子邮箱：</span></td>
+            <td colspan="2" align="left"><input name="email" type="text" id="email" value="" /></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="53">&nbsp;</td>
+            <td colspan="2" align="right" valign="middle">&nbsp;</td>
+            <td align="left" valign="middle"><input name="image" type="image"  style="width:58px; height:53px;" src="images/reg/login.gif" /><input type="image" src="images/reg/login1.gif"  style="width:58px; height:53px;" onclick="this.form.reset(); return false;" />              </td>
+          </tr>
+        </table></td>
+        <td width="16" background="Images/bj3.gif">&nbsp;</td>
+      </tr>
+    </table>
+	
+	 </form>
+	 <br />
+   <table width="100%" height="55" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="55" align="center" valign="middle"><span class="STYLE6">版权所有：山东大学供应科<br />
+              <br />
+          联系地址：山东省济南市山大南路27号山东大学东区新校 邮编：250100</span></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

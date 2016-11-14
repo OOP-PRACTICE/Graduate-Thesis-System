@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+ 
+<link  href="Css/layout.css" rel="stylesheet" type="text/css" />
+<link href="Css/cb.css" rel="stylesheet" type="text/css"   />
+<link  href="Css/n.css" rel="stylesheet" type="text/css" />
+<style>
+.biankuangs{ border:solid #A6D2FF 1px; border-top:0px; }
+#item_text2,#item_text1,#itemtypes2,#item_text3{ /**/display:none;}
+
+.STYLE1 {color: #FF0000}
+.STYLE1 {color: #FF0000}
+</style> 
+<script>
+	function gooo(id){
+		if(id!=""){
+		location.href='?x='+id;
+		}
+	}
+function change_itemtypes2(name){
+
+ 
+ 	document.getElementById("types2").value="";
+	document.getElementById("types3").value="";
+	if(name=='1'){
+       document.getElementById("item_text2").style.display="block"; 
+	   
+	   document.getElementById("item_text3").style.display="none"; 
+	   
+	}else if(name=='3'){
+ 
+		document.getElementById("item_text2").style.display="none";
+		document.getElementById("item_text3").style.display="block"; 	
+	}else{
+ 
+		document.getElementById("item_text2").style.display="none";
+		document.getElementById("item_text3").style.display="none"; 
+	}
+	
+}
+
+function change_itemtypes23(name){
+ 	document.getElementById("types2").value="";
+	if(name=='1'){
+       document.getElementById("item_text2").style.display="block"; 
+	}else{
+ 
+		document.getElementById("item_text2").style.display="none"; 
+	}
+}
+
+function apply1(){
+	var f=document.form1;
+	if(f.itemname.value==""){
+		alert('申请项目名不能为空');
+		return false;
+	}
+	if(f.itemtypes.value==""){
+		alert('请选择申请项目类型');
+		return false;
+	}
+	if(f.fuzeren.value==""){
+		alert('项目负责人不能为空');
+		return false;
+	}
+	if(f.zhiwu.value==""){
+		alert('项目负责人职务不能为空');
+		return false;
+	}
+	if(f.tel2.value==""){
+		alert('项目负责人联系电话不能为空');
+		return false;
+	}
+	if(f.lxren.value==""){
+		alert('联系人不能为空');
+		return false;
+	}
+	if(f.tel.value==""){
+		alert('联系人电话不能为空');
+		return false;
+	}
+	if(f.applyyear.value==""){
+		alert('请选择申报年份');
+		return false;
+	}
+	
+}
+</script>
+</head>
+
+<body>
+<table width="99%" height="25" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:4px;">
+      <tr>
+        <td width="17" background="Images/bj4.gif"><img src="Picture/r.gif" width="16" height="16" /></td>
+        <td width="466" background="Images/bj4.gif">张宇(学院申报者):你好！欢迎光临，您上次登录时间是：2015-09-20 23:15:15		
+		</td>
+        <td width="162" align="center" background="Images/bj4.gif">
+		
+				</td>           
+      </tr>
+    </table>
+<table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="1%" align="left" background="Images/b2.jpg"><img src="Picture/b1.jpg" width="10" height="26" /></td>
+            <td width="68%" background="Images/b2.jpg"><table width="211" border="0" align="left" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="20" align="left"><img src="Picture/tz.gif" width="10" height="16" /></td>
+                  <td width="191" align="left" class="biao">项目申报-基本信息</td>
+                </tr>
+            </table></td>
+            <td width="31%" align="right" background="Images/b2.jpg"><img src="Picture/b3.jpg" width="9" height="26" /></td>
+          </tr>
+</table>
+
+ <form action="?action=save" method="post" enctype="multipart/form-data" name="form1"  onsubmit="return apply1();">
+ <table width="99%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#AEDEF4">
+  <tr>
+    <td width="86" height="25" align="center" bgcolor="#FFF9DF">项目名称</td>
+    <td colspan="5" align="left" bgcolor="#FFFFFF"><label>
+&nbsp;<input name="itemname" type="text" id="itemname" size="80" />
+</label></td>
+    <td align="center" bgcolor="#FFF9DF">申报年份</td>
+    <td align="left" bgcolor="#FFFFFF" class="t5">
+      <div align="left">
+        <select name="applyyear" id="applyyear">
+          <option value="" >请选择...</option>
+          <option value='2009' >2009</option><option value='2010' >2010</option><option value='2011' >2011</option><option value='2012' >2012</option><option value='2013' >2013</option><option value='2008' >2008</option><option value='2014' >2014</option><option value='2015' >2015</option><option value='2016' >2016</option>        </select>
+        </div>
+      </div></td>
+  </tr>
+    <tr>
+      <td height="25" align="center" bgcolor="#FFF9DF">负责人</td>
+      <td width="108" align="center" bgcolor="#FFFFFF"> 
+        <div align="left">
+          <input name="fuzeren" type="text" id="fuzeren" value="张宇" size="15"   />      
+       </div></td>
+      <td align="center" bgcolor="#FFF9DF">职务</td>
+      <td align="center" bgcolor="#FFFFFF"><div align="left">
+        &nbsp;<input name="zhiwu" type="text" id="zhiwu" value="讲师" size="15" />
+      </div></td>
+      <td align="center" bgcolor="#FFF9DF">电话</td>
+      <td align="center" bgcolor="#FFFFFF" class="t5">
+        <div align="left">
+          <input name="tel2" type="text" id="tel2" value="12334567" size="15" />
+        </div></td>
+      <td align="center" bgcolor="#FFF9DF">Email</td>
+      <td align="left" bgcolor="#FFFFFF" class="t5"><div align="left">
+        <input name="email" type="text" id="email" size="15"  value="" />
+      </div></td>
+    </tr>
+    <tr>
+      <td height="25" align="center" bgcolor="#FFF9DF"> 联系人</td>
+      <td width="108" align="center" bgcolor="#FFFFFF"><div align="left">
+        <input name="lxren" type="text" id="lxren" value="张宇" size="15" />
+      </div></td>
+      <td align="center" bgcolor="#FFF9DF">电话</td>
+      <td colspan="5" align="left" bgcolor="#FFFFFF"><div align="left">
+          &nbsp;<input name="tel" type="text" id="tel" size="20" value="12334567"/>
+      </div></td>
+    </tr>
+  </table>
+ <table width="99%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#AEDEF4">
+    <tr>
+      <td width="86" rowspan="2" align="center" bgcolor="#FFF9DF">申请经费</td>
+      <td height="25" align="center" bgcolor="#FFF9DF">申请学校投入经费</td>
+      <td height="25" align="center" bgcolor="#FFF9DF">学院匹配经费</td>
+    </tr>
+    <tr>
+      <td height="25" align="center" bgcolor="#FFFFFF">金额
+        <input name="jf_xuexiao" type="text" id="jf_xuexiao" value="" size="6" />
+      （万）</td>
+      <td height="25" align="center" bgcolor="#FFFFFF">项目编号
+        <input name="jf_yid" type="text" id="jf_yid" value="" size="15" />
+        金额
+        <input name="jf_xueyuan" type="text" id="jf_xueyuan" value="" size="6" />
+（万）</td>
+    </tr>
+
+    <tr>
+      <td height="33" colspan="3" align="center" bgcolor="#FFF9DF"><div align="left">学校投入经费分配：</div></td>
+    </tr>
+    <tr>
+      <td height="25" align="center" bgcolor="#FFF9DF">购置设备</td>
+      <td height="12" colspan="2" align="left" bgcolor="#FFFFFF"  style="color:#999999; padding-left:5px;"><input name="shebei" type="text" id="shebei" size="10" />
+（万）</td>
+    </tr>
+    <tr>
+      <td height="25" align="center" bgcolor="#FFF9DF">购置家具</td>
+      <td height="25" colspan="2" align="left" bgcolor="#FFFFFF"  style="color:#999999; padding-left:5px;"><div align="left">
+          <input name="jiaju" type="text" id="jiaju" size="10" />
+      （万）</div></td>
+    </tr>
+	    <tr>
+      <td height="25" align="center" bgcolor="#FFF9DF">环境改造</td>
+      <td height="25" colspan="2" align="left" bgcolor="#FFFFFF"  style="color:#999999; padding-left:5px;"><div align="left">
+          <input name="huanjing" type="text" id="huanjing" size="10" />
+        （万）</div></td>
+    </tr>
+    <tr>
+      <td height="30" align="center" bgcolor="#FFF9DF">附件1</td>
+      <td height="25" colspan="2" align="left" bgcolor="#FFFFFF"  style="color:#999999; padding-left:5px;">
+        <div align="left">
+          <input type="file" name="file" id="file">
+        （<span class="STYLE1">申报材料ppt格式、word格式或rar压缩文件</span>）</div>
+      <div align="left"></div></td>
+    </tr>
+
+    <tr>
+      <td align="center" bgcolor="#FFF9DF">&nbsp;</td>
+      <td height="25" colspan="2" align="left" bgcolor="#FFFFFF"  style="color:#999999; padding-left:20px;"><input type="submit" name="Submit" value="下一步" /></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
