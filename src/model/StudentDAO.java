@@ -8,8 +8,6 @@ import org.hibernate.criterion.Example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import beans.Student;
-
 /**
  * A data access object (DAO) providing persistence and search support for
  * Student entities. Transaction control of the save(), update() and delete()
@@ -18,7 +16,7 @@ import beans.Student;
  * methods provides additional information for how to configure it for the
  * desired type of transaction control.
  * 
- * @see beans.Student
+ * @see model.Student
  * @author MyEclipse Persistence Tools
  */
 public class StudentDAO extends BaseHibernateDAO {

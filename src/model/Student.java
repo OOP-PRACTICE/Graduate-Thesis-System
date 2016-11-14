@@ -1,4 +1,4 @@
-package beans;
+package model;
 
 /**
  * Student entity. @author MyEclipse Persistence Tools
