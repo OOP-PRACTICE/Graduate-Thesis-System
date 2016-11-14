@@ -8,26 +8,15 @@ import beans.*;
 
 @SuppressWarnings("serial")
 public class loginaction extends ActionSupport{
-	String selectcom;
-	String username;
-	String password;
+	private int selectcom;
+	private String username;
+	private String password;
 	TeacherDAO td = new TeacherDAO();
 	StudentDAO sd = new StudentDAO();
 	Student student = new Student();
-	public StudentDAO getSd() {
-		return sd;
-	}
-	public TeacherDAO getTd() {
-		return td;
-	}
-	public void setTd(TeacherDAO td) {
-		this.td = td;
-	}
-	public void setSd(StudentDAO sd) {
-		this.sd = sd;
-	}
+	
 	Teacher teacher = new Teacher();
-	public String getSelectcom() {
+	public int getSelectcom() {
 		return selectcom;
 	}
 	public String getUsername() {
@@ -42,44 +31,41 @@ public class loginaction extends ActionSupport{
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public void setSelectcom(String selectcom) {
+	public void setSelectcom(int selectcom) {
 		this.selectcom = selectcom;
 	}
-	public Student getStudent() {
-		return student;
-	}
-	public void setStudent(Student student) {
-		this.student = student;
-	}
-	public Teacher getTeacher() {
-		return teacher;
-	}
-	public void setTeacher(Teacher teacher) {
-		this.teacher = teacher;
-	}
+
 	public String login(){
-		String postion = getSelectcom();
+		int postion = getSelectcom();
 		System.out.println(postion);
 		String user = getUsername();
+		System.out.println(user);
 		String pw = getPassword();
-		if(postion == "1"){
+				
+		String returntype = null;
+		if(postion == 1){
+			System.out.println("fasdfasdf");
+			
 			Student st = sd.findById(user);
+			
+			System.out.println(st.getStupw());
+			
 			if(pw.equals(st.getStupw())){
 				student = st;
-				return "stusuccess";
+				returntype =  "stusuccess";
 			}
 			else
-				return "error";
+				returntype = "error";
 		}
-		else if(postion == "2"){
+		else if(postion == 2){
 			Teacher te = td.findById(user);
 			if(pw.equals(te.getTeapw())){
-				return "teasuccess";
+				returntype = "teasuccess";
 			}
 			else
-				return "error";
+				returntype = "error";
 		}
-		return SUCCESS;
+		return returntype;
 	}
 		
 		

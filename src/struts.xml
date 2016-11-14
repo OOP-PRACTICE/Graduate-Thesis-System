@@ -2,11 +2,10 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 <package name="designsystem" namespace="/webpages" extends="struts-default">
-		<action name="homepage" class="controller.loginaction" method="login">
-<!-- 			<result type="json" name="stusuccess">/index.html</result> -->
-<!-- 			<result type="json" name="error">/error.html</result> -->
-<!-- 			<result type="json" name="teasuccess">/index_teacher.html</result> -->
-			<result name="SUCCESS">/index.html</result>
+		<action name="login" class="controller.loginaction" method="login">
+			<result name="stusuccess">/webpages/index.html</result> 
+ 			<result name="error">/webpages/loginError.html</result>
+			<result name="teasuccess">/webpages/index_teacher.html</result> 
 		</action>
 		
 </package>

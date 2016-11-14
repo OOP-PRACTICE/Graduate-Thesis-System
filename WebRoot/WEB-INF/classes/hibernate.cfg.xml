@@ -19,9 +19,8 @@
 		</property>
 		<property name="myeclipse.connection.profile">mysql1</property>
 		<property name="show_sql">true</property>
-		<mapping resource="beans/Student.hbm.xml" />
-		<mapping resource="beans/Teacher.hbm.xml" />
-		<mapping resource="beans/Subject.hbm.xml" />
+		<mapping resource="model/Student.hbm.xml" />
+		<mapping resource="model/Teacher.hbm.xml" />
 
 	</session-factory>
 

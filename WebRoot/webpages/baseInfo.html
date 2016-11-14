@@ -44,18 +44,20 @@ href="showPersonalInfo_files/text.css"><LINK rel=stylesheet type=text/css
 href="showPersonalInfo_files/main.css">
 <DIV class=title><SPAN class=left><EM>我的信息</EM></SPAN> <SPAN 
 class=right>&nbsp;</SPAN> </DIV>
+<s:form>
 <TABLE class=form cellSpacing=0 cellPadding=0>
   <TBODY>
+  
   <TR>
     <TH width="15%">用户名</TH>
-    <TD>2014012537&nbsp;</TD>
+    <TD><s:textfield name = "student.stuid"/>&nbsp;</TD>
     <TH width="15%">真实姓名</TH>
-    <TD>刘朝洋&nbsp;</TD>
+    <TD><s:textfield name = "student.stuname"/>&nbsp;</TD>
     <TD rowSpan=4><IMG src="showPersonalInfo_files/loadphoto_added.jpg" 
       height=108></TD></TR>
   <TR>
     <TH width="15%">所在院系</TH>
-    <TD>信息工程学院&nbsp;</TD>
+    <TD><s:textfield name = "student.stucollege"/>&nbsp;</TD>
     <TH width="15%">专业</TH>
     <TD>计算机科学与技术&nbsp;</TD></TR>
   <TR>
@@ -83,5 +85,5 @@ class=right>&nbsp;</SPAN> </DIV>
     <TD>&nbsp;</TD>
     <TH width="15%">邮政编码</TH>
     <TD colSpan=2>&nbsp;</TD></TR></TBODY></TABLE><BR>
-
+</s:form>
 </BODY></HTML>
