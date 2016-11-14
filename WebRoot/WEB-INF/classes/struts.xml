@@ -3,7 +3,10 @@
 <struts>
 <package name="designsystem" namespace="/webpages" extends="struts-default">
 		<action name="homepage" class="controller.loginaction" method="login">
-			<result>/index.jsp</result>
+<!-- 			<result type="json" name="stusuccess">/index.html</result> -->
+<!-- 			<result type="json" name="error">/error.html</result> -->
+<!-- 			<result type="json" name="teasuccess">/index_teacher.html</result> -->
+			<result name="SUCCESS">/index.html</result>
 		</action>
 		
 </package>

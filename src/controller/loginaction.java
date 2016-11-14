@@ -1,23 +1,27 @@
 package controller;
 
-import javax.servlet.http.HttpServletRequest;
-
-import org.apache.struts2.ServletActionContext;
-
-import model.StudentDAO;
+import model.*;
 
 import com.opensymphony.xwork2.ActionSupport;
 
 import beans.*;
 
+@SuppressWarnings("serial")
 public class loginaction extends ActionSupport{
 	String selectcom;
 	String username;
 	String password;
+	TeacherDAO td = new TeacherDAO();
 	StudentDAO sd = new StudentDAO();
 	Student student = new Student();
 	public StudentDAO getSd() {
 		return sd;
+	}
+	public TeacherDAO getTd() {
+		return td;
+	}
+	public void setTd(TeacherDAO td) {
+		this.td = td;
 	}
 	public void setSd(StudentDAO sd) {
 		this.sd = sd;
@@ -60,11 +64,20 @@ public class loginaction extends ActionSupport{
 		String pw = getPassword();
 		if(postion == "1"){
 			Student st = sd.findById(user);
-			HttpServletRequest HttpServletRequestrequest;
 			if(pw.equals(st.getStupw())){
 				student = st;
-				System.out.println(st.getStuid()+st.getStuname()+st.getStucollege());
+				return "stusuccess";
 			}
+			else
+				return "error";
+		}
+		else if(postion == "2"){
+			Teacher te = td.findById(user);
+			if(pw.equals(te.getTeapw())){
+				return "teasuccess";
+			}
+			else
+				return "error";
 		}
 		return SUCCESS;
 	}
