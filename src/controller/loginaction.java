@@ -13,8 +13,14 @@ public class loginaction extends ActionSupport{
 	private String password;
 	TeacherDAO td = new TeacherDAO();
 	StudentDAO sd = new StudentDAO();
-	Student student = new Student();
+	private Student student;
 	
+	public Student getStudent() {
+		return student;
+	}
+	public void setStudent(Student student) {
+		this.student = student;
+	}
 	Teacher teacher = new Teacher();
 	public int getSelectcom() {
 		return selectcom;
@@ -34,31 +40,31 @@ public class loginaction extends ActionSupport{
 	public void setSelectcom(int selectcom) {
 		this.selectcom = selectcom;
 	}
+	
 
 	public String login(){
 		int postion = getSelectcom();
 		System.out.println(postion);
-		String user = getUsername();
-		System.out.println(user);
+		String userid = getUsername();
+		System.out.println(userid);
 		String pw = getPassword();
 				
 		String returntype = null;
 		if(postion == 1){
 			System.out.println("fasdfasdf");
 			
-			Student st = sd.findById(user);
+			student= sd.findById(userid);
 			
-			System.out.println(st.getStupw());
+			System.out.println(student.getStupw());
 			
-			if(pw.equals(st.getStupw())){
-				student = st;
+			if(pw.equals(student.getStupw())){
 				returntype =  "stusuccess";
 			}
 			else
 				returntype = "error";
 		}
 		else if(postion == 2){
-			Teacher te = td.findById(user);
+			Teacher te = td.findById(userid);
 			if(pw.equals(te.getTeapw())){
 				returntype = "teasuccess";
 			}
@@ -68,6 +74,12 @@ public class loginaction extends ActionSupport{
 		return returntype;
 	}
 		
+	
+	public String baseInfo() {
 		
+		
+		return SUCCESS;
+		
+	}	
 	
 }
