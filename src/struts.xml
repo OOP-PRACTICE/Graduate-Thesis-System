@@ -3,10 +3,17 @@
 <struts>
 <package name="designsystem" namespace="/webpages" extends="struts-default">
 		<action name="login" class="controller.loginaction" method="login">
-			<result name="stusuccess">/webpages/index.html</result> 
+			<result name="stusuccess">/webpages/index.jsp</result> 
  			<result name="error">/webpages/loginError.html</result>
-			<result name="teasuccess">/webpages/index_teacher.html</result> 
+			<result name="teasuccess">/webpages/index_teacher.jsp</result> 
 		</action>
+		<action name="baseinfo" class="controller.loginaction" method="baseInfo">
+				<result>/webpages/baseInfo.jsp</result>
+		</action>
+	    <action name="modify" class="controller.loginaction" method="modifypassword">
+				<result>/webpages/login.jsp</result>
+		</action>
+		
 		
 </package>
 </struts>    

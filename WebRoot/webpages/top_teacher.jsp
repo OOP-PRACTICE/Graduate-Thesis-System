@@ -1,7 +1,13 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <title>安全退出</title>
 <style type="text/css">
 <!--
@@ -87,11 +93,17 @@ ul, li {
 	</style>
         <div id="dao_right_bg" style="float:right;background-image:url(/images/san.jpg); height:69px; width:371px; margin-left:140px; overflow:hidden;">
           <ul class="dao_right" id="dao_right_id">
-            <li><a href="login.html" target="_parent" id="dao_a1" onfocus="this.blur()" onmouseover="headtop(&#39;d1&#39;,&#39;&#39;)" onmouseout="headtop(&#39;d1&#39;,&#39;n&#39;)"> </a></li>
+          <!--   <li><a href="login.html" target="_parent" id="dao_a1" onfocus="this.blur()" onmouseover="headtop(&#39;d1&#39;,&#39;&#39;)" onmouseout="headtop(&#39;d1&#39;,&#39;n&#39;)"> </a></li>
             <li><a href="mypw.html" target="main" id="dao_a2" onfocus="this.blur()" onmouseover="headtop(&#39;d2&#39;,&#39;&#39;)" onmouseout="headtop(&#39;d2&#39;,&#39;n&#39;)"> </a></li>
-            <li><a href="login.html" target="_parent" onclick="return confirm(&#39;确定退出吗？&#39;)" id="dao_a3" onfocus="this.blur()" onmouseover="headtop(&#39;d3&#39;,&#39;&#39;)" onmouseout="headtop(&#39;d3&#39;,&#39;n&#39;)"> </a></li>
+            <li><a href="login.html" target="_parent" onclick="return confirm(&#39;ç¡®å®éåºåï¼&#39;)" id="dao_a3" onfocus="this.blur()" onmouseover="headtop(&#39;d3&#39;,&#39;&#39;)" onmouseout="headtop(&#39;d3&#39;,&#39;n&#39;)"> </a></li>
             <li><a href="helplist.html" target="main" id="dao_a4" onfocus="this.blur()" onmouseover="headtop(&#39;d4&#39;,&#39;&#39;)" onmouseout="headtop(&#39;d4&#39;,&#39;n&#39;)"> </a></li>
-          </ul>
+           -->
+             <li><a href="login.html" target="_parent" id="dao_a1" onfocus="this.blur()"> </a></li>
+            <li><a href="mypw.html" target="main" id="dao_a2" onfocus="this.blur()" > </a></li>
+            <li><a href="login.html" target="_parent" onclick="return confirm('ç¡®å®éåºå?')" id="dao_a3" onfocus="this.blur()" > </a></li>
+            <li><a href="helplist.html" target="main" id="dao_a4" onfocus="this.blur()"> </a></li>
+          
+           </ul>
         </div></td>
     </tr>
   </tbody>
@@ -101,9 +113,14 @@ ul, li {
     <tr>
       <td width="2%" height="30">&nbsp;</td>
       <td width="98%"><div class="topnav">
-          <ul>
-          </ul>
-        </div></td>
+          
+        <ul>
+          
+                       您好！
+    <s:property value="#session.user.stuid"></s:property>
+    
+     
+          </ul></div></td>
     </tr>
   </tbody>
 </table>

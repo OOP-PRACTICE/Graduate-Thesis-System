@@ -129,4 +129,20 @@ public class StudentDAO extends BaseHibernateDAO {
 			throw re;
 		}
 	}
+	
+	
+	public void update(Student transientInstance,String pw){
+		log.debug("update Books instance");
+		try{
+			getSession().getTransaction().begin();
+			getSession().update(transientInstance);
+			transientInstance.setStupw(pw);
+			getSession().getTransaction().commit();
+			getSession().flush();
+		}catch(RuntimeException re){
+			log.error("update failed",re);
+			throw re;
+		}
+	}
+
 }

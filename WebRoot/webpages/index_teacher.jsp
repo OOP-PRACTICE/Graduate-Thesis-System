@@ -27,7 +27,7 @@ BODY
 </style>
 </head>
 <frameset rows="96,*" cols="*" frameborder="no" border="0" framespacing="0"  >
-  <frame src="top_teacher.html" name="topFrame" scrolling="No" noresize="noresize" id="topFrame" title="topFrame" />
+  <frame src="top_teacher.jsp" name="topFrame" scrolling="No" noresize="noresize" id="topFrame" title="topFrame" />
   <frameset cols="170,*" frameborder="no" border="0" framespacing="0" name=content >
     <frame  name=leftFrame marginWidth=0 marginHeight=0 src="left_apply1.html" noResize scrolling=yes target="main" />
     <frame src="Images/mainImg.jpg" name="main" id="main" title="main"  marginWidth=0 marginHeight=0 />
