@@ -10,7 +10,6 @@
 
 <title>安全退出</title>
 <style type="text/css">
-<!--
 body {
 	margin-left: 0px;
 	margin-top: 0px;
@@ -59,7 +58,6 @@ ul, li {
 .d4_headg {
 	background-image: url(/images/dao.gif);
 }
--->
 </style>
 <script>
 	function headtop(id,type){

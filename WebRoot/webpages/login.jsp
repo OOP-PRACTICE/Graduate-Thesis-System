@@ -2,13 +2,12 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>登录</title>
 <link href="Css/cb.css" rel="stylesheet" type="text/css" />
 <link href="Css/n.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
-<!--
 .STYLE1 {
 	color: #ffffff;
 	font-size: 12px;
@@ -21,7 +20,6 @@
 	font-size: 12px;
 	color: #5593ce;
 }
--->
 </style>
 <link  href="Css/layout.css" rel="stylesheet" type="text/css" />
 <script>
@@ -80,35 +78,31 @@ function f(){
 					request.setAttribute("map",map);
 					request.setAttribute("aa","0");
  				%>
-				<s:select list="#request.map"  name="selectcom" listKey="key" listValue="value" value="#request.aa"  headerKey="0" headerValue="请选择..">
-				</s:select>
-                </label> 
-               </td>
-            </tr>
-         
-            <tr>
-              <td>&nbsp;</td>
-              <td width="34%" height="55" align="left"> 
-			  <input type="submit" value="登录" />			  </td>
-            </tr>
-        </table>
-		 </form>		</td>
-        <td width="13" background="Images/bj3.gif">&nbsp;</td>
-      </tr>
-    </table>
-	<table width="465" height="76" border="0" cellpadding="0" cellspacing="0">
-      <tr>
-        <td height="76">&nbsp;</td>
-      </tr>
-    </table>
-	<br />
-	<table width="100%" height="64" border="0" cellpadding="0" cellspacing="0">
-      <tr>
-        <td height="64" align="center" valign="middle"><span class="STYLE6">版权所有：西北农林科技大学 <br />
-              <br />
-          陕西省咸阳市杨凌区 西北农林科技大学信息工程学院 邮编:712100</span></td>
-      </tr>
-    </table></td>
+                      <s:select list="#request.map"  name="selectcom" listKey="key" listValue="value" value="#request.aa"  headerKey="0" headerValue="请选择.."> </s:select>
+                    </label></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td width="34%" height="55" align="left"><input type="submit" value="登录" /></td>
+                </tr>
+              </table>
+            </form></td>
+          <td width="13" background="Images/bj3.gif">&nbsp;</td>
+        </tr>
+      </table>
+      <table width="465" height="76" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="76">&nbsp;</td>
+        </tr>
+      </table>
+      <br />
+      <table width="100%" height="64" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="64" align="center" valign="middle"><span class="STYLE6">版权所有：西北农林科技大学 <br />
+            <br />
+            陕西省咸阳市杨凌区 西北农林科技大学信息工程学院 邮编:712100</span></td>
+        </tr>
+      </table></td>
   </tr>
 </table>
 </body>
