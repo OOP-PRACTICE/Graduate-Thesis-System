@@ -8,5 +8,8 @@
 			<result name="teasuccess">/webpages/index_teacher.html</result> 
 		</action>
 		
+		<action name="baseInfo" class="controller.loginaction" method="baseInfo">
+			<result>/webpages/baseInfo.html</result>  
+		</action>
 </package>
 </struts>    

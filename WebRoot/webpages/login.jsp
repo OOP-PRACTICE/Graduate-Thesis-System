@@ -54,7 +54,7 @@ function check(){
       <tr>
         <td width="15" height="262" background="Images/bj1.gif">&nbsp;</td>
         <td width="420" valign="middle" background="Images/bj2.gif">
-		<form id="form1" name="form1" method="post" action="login.action">
+		<form id="form1" name="form1" method="post" action="login.action" onsubmit="return check();">
 		<table width="100%" height="170" border="0" align="center" cellpadding="0" cellspacing="0">
             <tr>
               <td width="31%" align="right"><span class="STYLE1">用户名：</span></td>

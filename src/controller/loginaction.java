@@ -48,16 +48,16 @@ public class loginaction extends ActionSupport{
 		String userid = getUsername();
 		System.out.println(userid);
 		String pw = getPassword();
-				
+		Student st =sd.findById(userid); 		
 		String returntype = null;
 		if(postion == 1){
-			System.out.println("fasdfasdf");
+			System.out.println("fasdfasdf"); 
 			
-			student= sd.findById(userid);
+			System.out.println(st.getStupw());
 			
-			System.out.println(student.getStupw());
-			
-			if(pw.equals(student.getStupw())){
+			if(pw.equals(st.getStupw())){
+				student  =  st;
+				
 				returntype =  "stusuccess";
 			}
 			else
@@ -66,6 +66,7 @@ public class loginaction extends ActionSupport{
 		else if(postion == 2){
 			Teacher te = td.findById(userid);
 			if(pw.equals(te.getTeapw())){
+				teacher = te;
 				returntype = "teasuccess";
 			}
 			else
@@ -76,8 +77,9 @@ public class loginaction extends ActionSupport{
 		
 	
 	public String baseInfo() {
-		
-		
+		Student st = getStudent();
+		System.out.println(st.getStuid());
+		System.out.println(st.getStucollege());
 		return SUCCESS;
 		
 	}	
