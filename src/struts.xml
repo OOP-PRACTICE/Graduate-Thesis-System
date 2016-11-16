@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-<package name="designsystem" namespace="/webpages" extends="struts-default">
+<package name="default" namespace="/webpages" extends="struts-default">
 		<action name="login" class="controller.loginaction" method="login">
 			<result name="stusuccess">/webpages/index.jsp</result> 
  			<result name="error">/webpages/loginError.html</result>
@@ -11,12 +11,25 @@
 				<result>/webpages/baseInfo.jsp</result>
 		</action>
 	    <action name="modify" class="controller.loginaction" method="modifypassword">
-				<result>/webpages/login.jsp</result>
+				<result>/webpages/relogin.jsp</result>
 		</action>
-		
 		
 		<action name="baseInfo" class="controller.loginaction" method="baseInfo">
 			<result>/webpages/baseInfo.html</result>  
+		</action>
+		<action name="find" class="controller.loginaction" method="findall">
+			<result>/webpages/subjectlist.jsp</result>  
+		</action>
+		<action name="select" class="controller.loginaction" method="select">
+			<result name="success" type="redirectAction">selected</result> 
+			<result name="fail" type="redirectAction">selected</result> 
+		</action>
+		<action name="selected" class="controller.loginaction" method="selected">
+			<result>/webpages/selectedSubinfo.jsp</result>
+		</action>
+		
+		<action name="unselect" class="controller.loginaction" method="unselect">
+			<result>/webpages/selectedSubinfo.jsp</result>  
 		</action>
 </package>
 </struts>    

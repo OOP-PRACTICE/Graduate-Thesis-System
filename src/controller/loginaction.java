@@ -1,7 +1,12 @@
 package controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
+import org.apache.struts2.ServletActionContext;
 
 import model.*;
 
@@ -18,10 +23,40 @@ public class loginaction extends ActionSupport{
     private HttpServletRequest request;
     private HttpSession session;
     private String pw;
+    private Subject subject;
+    private List<Subject> subjectList = new ArrayList<Subject>();
+    private String subid;
+    private Select select;
     StudentDAO sd = new StudentDAO();
     TeacherDAO td = new TeacherDAO();
+    SubjectDAO subdao=new SubjectDAO();
+    SelectDAO selectdao=new SelectDAO(); 
     
-	
+    
+	public Select getSelect() {
+		return select;
+	}
+	public void setSelect(Select select) {
+		this.select = select;
+	}
+	public String getSubid() {
+		return subid;
+	}
+	public void setSubid(String subid) {
+		this.subid = subid;
+	}
+	public Subject getSubject() {
+		return subject;
+	}
+	public void setSubject(Subject subject) {
+		this.subject = subject;
+	}
+	public List<Subject> getSubjectList() {
+		return subjectList;
+	}
+	public void setSubjectList(List<Subject> subjectList) {
+		this.subjectList = subjectList;
+	}
 	public String getPw() {
 		return pw;
 	}
@@ -64,6 +99,7 @@ public class loginaction extends ActionSupport{
 	public String login(){
 		int postion = getSelectcom();
 		System.out.println(postion);
+		
 		String userid = getUsername();
 		System.out.println(userid);
 		String pw = getPassword();
@@ -94,11 +130,11 @@ public class loginaction extends ActionSupport{
 	}
 		
 	
+
 	public String baseInfo() {
 		
         student=(Student) ActionContext.getContext().getSession().get("user");
         System.out.println(student.toString());
-        
         System.out.println(student.getStuname());
 		//System.out.println(username);
 		System.out.println("base!!!");
@@ -110,9 +146,56 @@ public class loginaction extends ActionSupport{
 		 String newpw=getPw();
 		 System.out.println(newpw);
 		 sd.update(student, newpw);
-		return SUCCESS;
-		
-		
+		return SUCCESS;	
 	}
+	
+	@SuppressWarnings("unchecked")
+	public String findall() {
+		subjectList=subdao.findAll();
+		ServletActionContext.getRequest().setAttribute("subjectList", subjectList);
+		return SUCCESS;
+	}
+	
+	public String select() {
+		subid=subject.getSubid();
+		subject=subdao.findById(subid);
+		student=(Student) ActionContext.getContext().getSession().get("user");
+		Select select1=new Select();
+		select1=(Select) selectdao.findByProperty(student).get(0);
+		if(select1==null)
+		{
+			System.out.println(student.getStuname());
+			select=new Select(student, subject);
+			selectdao.save(select);
+			ServletActionContext.getRequest().setAttribute("mess","你已选题成功！");	
+			System.out.println(subid);
+			return "success";
+		}else{
+			ServletActionContext.getRequest().setAttribute("mess","你已经选过题目了，重选，请先退选已选题目！");	
+			 return "fail";
+		}
+	}
+	public String selected() {
+		student=(Student) ActionContext.getContext().getSession().get("user");
+		System.out.println(student.getStuid());
+		//Integer stuInteger=Integer.valueOf(student.getStuid());
+		select=(Select) selectdao.findByProperty(student).get(0);
+	//	select=selectdao.findByStuid(student.getStuid());
+		subject=select.getSubject();
+		System.out.println(subject.getEndtime());
+		return SUCCESS;
+	}
+	
+	public String unselect() {
+		student=(Student) ActionContext.getContext().getSession().get("user");
+		select=(Select) selectdao.findByProperty(student).get(0);
+		selectdao.delete(select);
+		return SUCCESS;
+	}
+
+
+	
+	
+	
 	
 }

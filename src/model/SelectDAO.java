@@ -4,28 +4,32 @@ import java.util.List;
 
 import org.hibernate.LockOptions;
 import org.hibernate.Query;
+import org.hibernate.Transaction;
 import org.hibernate.criterion.Example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
  * A data access object (DAO) providing persistence and search support for
- * Student entities. Transaction control of the save(), update() and delete()
+ * Select entities. Transaction control of the save(), update() and delete()
  * operations can directly support Spring container-managed transactions or they
  * can be augmented to handle user-managed Spring transactions. Each of these
  * methods provides additional information for how to configure it for the
  * desired type of transaction control.
  * 
- * @see model.Student
+ * @see model.Select
  * @author MyEclipse Persistence Tools
  */
-public class StudentDAO extends BaseHibernateDAO {
-	private static final Logger log = LoggerFactory.getLogger(StudentDAO.class);
+public class SelectDAO extends BaseHibernateDAO {
+	private static final Logger log = LoggerFactory.getLogger(SelectDAO.class);
 
-	public void save(Student transientInstance) {
-		log.debug("saving Student instance");
+	public void save(Select transientInstance) {
+		log.debug("saving Select instance");
 		try {
+			org.hibernate.Transaction tran =  getSession().beginTransaction();
 			getSession().save(transientInstance);
+			getSession().flush();
+			tran.commit();
 			log.debug("save successful");
 		} catch (RuntimeException re) {
 			log.error("save failed", re);
@@ -33,10 +37,14 @@ public class StudentDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void delete(Student persistentInstance) {
-		log.debug("deleting Student instance");
+	public void delete(Select persistentInstance) {
+		log.debug("deleting Select instance");
 		try {
+			
+			Transaction tran =  getSession().beginTransaction();
 			getSession().delete(persistentInstance);
+			getSession().flush();
+			tran.commit();
 			log.debug("delete successful");
 		} catch (RuntimeException re) {
 			log.error("delete failed", re);
@@ -44,10 +52,22 @@ public class StudentDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public Student findById(String id) {
-		log.debug("getting Student instance with id: " + id);
+	public Select findById(java.lang.Integer id) {
+		log.debug("getting Select instance with id: " + id);
 		try {
-			Student instance = (Student) getSession().get("model.Student", id);
+			Select instance = (Select) getSession().get("model.Select", id);
+			return instance;
+		} catch (RuntimeException re) {
+			log.error("get failed", re);
+			throw re;
+		}
+	}
+	
+
+	public Select findByStuid(String stuid) {
+		log.debug("getting Select instance with stuid: " + stuid);
+		try {
+			Select instance = (Select) getSession().get("model.Select", stuid);
 			return instance;
 		} catch (RuntimeException re) {
 			log.error("get failed", re);
@@ -55,10 +75,10 @@ public class StudentDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public List findByExample(Student instance) {
-		log.debug("finding Student instance by example");
+	public List findByExample(Select instance) {
+		log.debug("finding Select instance by example");
 		try {
-			List results = getSession().createCriteria("model.Student")
+			List results = getSession().createCriteria("model.Select")
 					.add(Example.create(instance)).list();
 			log.debug("find by example successful, result size: "
 					+ results.size());
@@ -70,10 +90,10 @@ public class StudentDAO extends BaseHibernateDAO {
 	}
 
 	public List findByProperty(String propertyName, Object value) {
-		log.debug("finding Student instance with property: " + propertyName
+		log.debug("finding Select instance with property: " + propertyName
 				+ ", value: " + value);
 		try {
-			String queryString = "from Student as model where model."
+			String queryString = "from Select as model where model."
 					+ propertyName + "= ?";
 			Query queryObject = getSession().createQuery(queryString);
 			queryObject.setParameter(0, value);
@@ -83,11 +103,25 @@ public class StudentDAO extends BaseHibernateDAO {
 			throw re;
 		}
 	}
+	
+	public List findByProperty(Student value) {
+		log.debug("finding Select instance with property:stuid"
+				+ ", value: " + value);
+		try {
+			String queryString = "from Select as model where model.student.stuid"+ "= ?";
+			Query queryObject = getSession().createQuery(queryString);
+			queryObject.setParameter(0, value.getStuid());
+			return queryObject.list();
+		} catch (RuntimeException re) {
+			log.error("find by property name failed", re);
+			throw re;
+		}
+	}
 
 	public List findAll() {
-		log.debug("finding all Student instances");
+		log.debug("finding all Select instances");
 		try {
-			String queryString = "from Student";
+			String queryString = "from Select";
 			Query queryObject = getSession().createQuery(queryString);
 			return queryObject.list();
 		} catch (RuntimeException re) {
@@ -96,10 +130,10 @@ public class StudentDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public Student merge(Student detachedInstance) {
-		log.debug("merging Student instance");
+	public Select merge(Select detachedInstance) {
+		log.debug("merging Select instance");
 		try {
-			Student result = (Student) getSession().merge(detachedInstance);
+			Select result = (Select) getSession().merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -108,8 +142,8 @@ public class StudentDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void attachDirty(Student instance) {
-		log.debug("attaching dirty Student instance");
+	public void attachDirty(Select instance) {
+		log.debug("attaching dirty Select instance");
 		try {
 			getSession().saveOrUpdate(instance);
 			log.debug("attach successful");
@@ -119,8 +153,8 @@ public class StudentDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void attachClean(Student instance) {
-		log.debug("attaching clean Student instance");
+	public void attachClean(Select instance) {
+		log.debug("attaching clean Select instance");
 		try {
 			getSession().buildLockRequest(LockOptions.NONE).lock(instance);
 			log.debug("attach successful");
@@ -129,20 +163,4 @@ public class StudentDAO extends BaseHibernateDAO {
 			throw re;
 		}
 	}
-	
-	
-	public void update(Student transientInstance,String pw){
-		log.debug("update Books instance");
-		try{
-			getSession().getTransaction().begin();
-			getSession().update(transientInstance);
-			transientInstance.setStupw(pw);
-			getSession().getTransaction().commit();
-			getSession().flush();
-		}catch(RuntimeException re){
-			log.error("update failed",re);
-			throw re;
-		}
-	}
-
 }

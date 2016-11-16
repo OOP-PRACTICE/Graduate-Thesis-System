@@ -23,19 +23,16 @@ TD {	FONT-SIZE: 12px; line-height: 150%}
 <script language="javascript">
 function switchSysBar(){
 	if (switchPoint.innerText==3){
-		switchPoint.innerText=4
-		document.all("mnuList").style.display="none"
-		top.content.cols="12,*"
+		switchPoint.innerText=4;
+		document.all("mnuList").style.display="none";
+		top.content.cols="12,*";
 	}
 	else{
-		switchPoint.innerText=3
-		document.all("mnuList").style.display=""				
-		top.content.cols="148,*"		
+		switchPoint.innerText=3;
+		document.all("mnuList").style.display="";				
+		top.content.cols="148,*";		
 	}
 }
-　　var leftm=function(params){
-　　//执行的语句
-　　}
 </script>
 <base target="main" />
 </head>
@@ -265,10 +262,10 @@ outlooksmoothstat = 0;
     <td height="30" bgcolor="#5293D3"  ><strong  style="color:#FFFFFF">&nbsp;&nbsp;学生选题</strong></td>
   </tr>
   <tr>
-    <td class="leftnav"><a href="subjectLists.html" target="main">题目列表</a></td>
+    <td class="leftnav"><a href="find.action" target="main">题目列表</a></td>
   </tr>
   <tr>
-    <td height="28" class="leftnav"><a href="selectedSubinfo.html" target="main">已选题目</a></td>
+    <td height="28" class="leftnav"><a href="selected.action" target="main">已选题目</a></td>
   </tr>
   <tr>
     <td height="28" class="leftnav"><a href="commitFiles.html" target="main">提交论文</a></td>
