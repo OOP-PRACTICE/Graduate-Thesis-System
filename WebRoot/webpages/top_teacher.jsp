@@ -91,11 +91,6 @@ ul, li {
 	</style>
         <div id="dao_right_bg" style="float:right;background-image:url(/images/san.jpg); height:69px; width:371px; margin-left:140px; overflow:hidden;">
           <ul class="dao_right" id="dao_right_id">
-             <li><a href="login.html" target="_parent" id="dao_a1" onfocus="this.blur()"> </a></li>
-            <li><a href="mypw.html" target="main" id="dao_a2" onfocus="this.blur()" > </a></li>
-            <li><a href="login.html" target="_parent" onclick="return confirm('ç¡®å®éåºå?')" id="dao_a3" onfocus="this.blur()" > </a></li>
-            <li><a href="helplist.html" target="main" id="dao_a4" onfocus="this.blur()"> </a></li>
-          
            </ul>
         </div></td>
     </tr>
@@ -110,7 +105,13 @@ ul, li {
         <ul>
           
                        您好！
+    <s:property value="#session.user.stuname"></s:property>                  
     <s:property value="#session.user.stuid"></s:property>
+     <s:property value="#session.user.teaname"></s:property>                  
+    <s:property value="#session.user.teaid"></s:property>
+    <s:property value="#session.user.manname"></s:property>                  
+    <s:property value="#session.user.manid"></s:property>
+      &nbsp;&nbsp;<a href="login.jsp"target="_parent">退出</a>
     
      
           </ul></div></td>

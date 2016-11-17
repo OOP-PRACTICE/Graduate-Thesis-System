@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
      <center>Modify password successfully, please relogin!</center>
-     <a href="/webpages/login.jsp">重新登录</a>
+     <center><a href="/Graduate-Thesis-System/webpages/login.jsp" target="_parent">重新登录</a></center>
   
    <!--  <form action="webpages/login.jsp">
     <center><input type="submit" value="重新登录"/></center>

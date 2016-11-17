@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -79,13 +87,30 @@ function change_itemtypes2(name){
   </tr>
 </table>
 <table width="99%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#AEDEF4" style="border:1px solid #AEDEF4">
+ 
   <tr>
-    <td width="5%" height="25" align="center" bgcolor="#EFFBFE">题目编号</td>
-    <td align="center" bgcolor="#EFFBFE">题目名称</td>
-    <td colspan="2" align="center" bgcolor="#EFFBFE"> 指导老师 </td>
-    <td align="center" bgcolor="#EFFBFE">学生学号</td>
+    <td width="5%" height="25" align="center" bgcolor="#EFFBFE">学生学号</td>
     <td align="center" bgcolor="#EFFBFE">学生姓名</td>
+    <td align="center" bgcolor="#EFFBFE">指导教师</td>
+    <td align="center" bgcolor="#EFFBFE">毕设论题</td>
   </tr>
+  
+  	<s:iterator value="#request.selectList" var="select">
+				<tr>
+					<td height="25" align="center" bgcolor="#FFF9DF">
+					<s:property value='#select.student.stuid' />
+					</td>
+					<td height="25" align="center" bgcolor="#FFF9DF">
+					<s:property value='#select.student.stuname' />
+					</td>
+					<td height="25" align="center" bgcolor="#FFF9DF">
+					<s:property value='#select.subject.teacher.teaname' />
+					</td>
+					<td height="25" align="center" bgcolor="#FFF9DF">
+					<s:property value='#select.subject.subname' />
+					</td>
+				</tr>
+</s:iterator>
 </table>
 </body>
 </html>

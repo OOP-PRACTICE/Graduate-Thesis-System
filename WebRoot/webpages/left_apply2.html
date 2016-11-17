@@ -58,19 +58,17 @@ TD {
 <script language="javascript">
 function switchSysBar(){
 	if (switchPoint.innerText==3){
-		switchPoint.innerText=4
-		document.all("mnuList").style.display="none"
-		top.content.cols="12,*"
+		switchPoint.innerText=4;
+		document.all("mnuList").style.display="none";
+		top.content.cols="12,*";
 	}
 	else{
-		switchPoint.innerText=3
-		document.all("mnuList").style.display=""				
-		top.content.cols="148,*"		
+		switchPoint.innerText=3;
+		document.all("mnuList").style.display="";			
+		top.content.cols="148,*";	
 	}
 }
-　　var leftm=function(params){
-　　//执行的语句
-　　}
+
 </script>
 <base target="main" />
 </head>
@@ -277,19 +275,42 @@ outlooksmoothstat = 0;
                 <td height="30" bgcolor="#5293D3"  ><strong  style="color:#FFFFFF">&nbsp;&nbsp;个人中心</strong></td>
               </tr>
               <tr >
-                <td class="leftnav"><a href="baseInfo.html" target="main">基本信息</a></td>
+                <td class="leftnav"><a href="baseinfoman.action" target="main">基本信息</a></td>
               </tr>
               <tr >
-                <td class="leftnav"><a href="mypw.html" target="main">修改密码</a></td>
+                <td class="leftnav"><a href="mypwman.html" target="main">修改密码</a></td>
               </tr>
               <tr>
                 <td height="30" bgcolor="#5293D3"  ><strong  style="color:#FFFFFF">&nbsp;&nbsp;管理中心</strong></td>
               </tr>
-              <tr>
-                <td height="28" class="leftnav"><a href="publishNotice.html" target="main">发布通知</a></td>
+              
+               <tr>
+                <td height="28" class="leftnav"><a href="resultall.action" target="main">查看成绩</a></td>
               </tr>
+              
+              
+              
+              
+              
+              
               <tr>
-                <td height="28" class="leftnav"><a href="SelectResults.html" target="main">选题结果</a></td>
+                <td height="28" class="leftnav"><a href="#" target="main">成绩录入</a></td>              
+              </tr>
+              
+              
+              
+              
+                <tr>
+                <td height="28" class="leftnav"><a href="modifygrade.action" target="main">修改成绩</a></td>
+              </tr>
+              
+              
+              
+              
+              
+              
+              <tr>
+                <td height="28" class="leftnav"><a href="selectresultsman.action" target="main">选题结果</a></td>
               </tr>
               <tr>
                 <td height="30" bgcolor="#5293D3"  ><strong style="color:#FFFFFF">&nbsp;&nbsp;信息交流</strong></td>

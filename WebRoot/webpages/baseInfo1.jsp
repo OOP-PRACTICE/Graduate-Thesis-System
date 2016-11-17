@@ -58,14 +58,14 @@ class=right>&nbsp;</SPAN> </DIV>
   
   <TR>
     <TH width="15%">学工号</TH>
-    <TD> <s:property value="student.stuid"></s:property>&nbsp;</TD>
+    <TD> <s:property value="teacher.teaid"></s:property>&nbsp;</TD>
     <TH width="15%">真实姓名</TH>
-  <TD> <s:property value="student.stuname"></s:property>&nbsp;</TD>
+  <TD> <s:property value="teacher.teaname"></s:property>&nbsp;</TD>
     <TD rowSpan=4><IMG src="showPersonalInfo_files/loadphoto_added.jpg" 
       height=108></TD></TR>
   <TR>
     <TH width="15%">所在院系</TH>
-  <TD> <s:property value="student.stucollege"></s:property>&nbsp;</TD>
+  <TD> <s:property value="teacher.teacollege"></s:property>&nbsp;</TD>
     <TH width="15%">专业</TH>
     <TD>计算机科学与技术&nbsp;</TD></TR>
   <TR>

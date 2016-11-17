@@ -35,35 +35,50 @@ display:
     <td width="31%" align="right" background="Images/b2.jpg"><img src="Picture/b3.jpg" width="9" height="26" /></td>
   </tr>
 </table>
-<form id="form1" name="form1" method="post" action="">
+<form id="form1" name="form1" method="post" action="publish.action">
   <table width="99%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#AEDEF4">
+    <tr>
+      <td width="21%" height="25" align="right" bgcolor="#D6F2FD">论文编号&nbsp;</td>
+      <td width="79%" bgcolor="#FFFFFF"><fieldset>
+          <input type="text" name="subid" />
+        </fieldset></td>
+    </tr>
     <tr>
       <td width="21%" height="25" align="right" bgcolor="#D6F2FD">论文题目&nbsp;</td>
       <td width="79%" bgcolor="#FFFFFF"><fieldset>
-          <input type="text" />
+          <input type="text" name="subname" />
         </fieldset></td>
     </tr>
     <tr>
-      <td height="25" align="right" bgcolor="#EFFBFE">指导老师&nbsp;</td>
+      <td height="25" align="right" bgcolor="#EFFBFE">老师学工号&nbsp;</td>
       <td bgcolor="#FFFFFF"><fieldset>
-          <input type="text" />
+          <input type="text" name="teaid1"/>
         </fieldset></td>
     </tr>
     <tr>
-      <td height="25" align="right" bgcolor="#D6F2FD">要求&nbsp;</td>
+      <td height="25" align="right" bgcolor="#D6F2FD">要求简介&nbsp;</td>
       <td bgcolor="#FFFFFF"><fieldset>
-         <textarea cols="120" rows="25"></textarea>
+         <textarea cols="120" rows="25" name="subcontent" ></textarea>
         </fieldset></td>
+    </tr>
+     <tr>
+      <td height="25" align="right" bgcolor="#D6F2FD">发布日期&nbsp;</td>
+      <td bgcolor="#FFFFFF"><fieldset>
+          <input type="text" name="starttime" />
+        </fieldset></td>
+        
     </tr>
     <tr>
       <td height="25" align="right" bgcolor="#D6F2FD">截止日期&nbsp;</td>
       <td bgcolor="#FFFFFF"><fieldset>
-          <input type="datetime" />
+          <input type="text" name="endtime" />
         </fieldset></td>
+        
     </tr>
+    
     <tr>
       <td colspan="2" align="center" bgcolor="#FFFFFF"><label>
-          <input type="submit" />
+          <input type="submit" value="提交" />
         </label></td>
     </tr>
   </table>
