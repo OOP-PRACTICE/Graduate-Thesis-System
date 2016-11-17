@@ -1,4 +1,15 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -72,20 +83,52 @@ function change_itemtypes2(name){
     <td width="68%" background="Images/b2.jpg"><table width="124" border="0" align="left" cellpadding="0" cellspacing="0">
         <tr>
           <td width="20" align="left"><img src="Picture/tz.gif" width="10" height="16" /></td>
-          <td width="104" align="left" class="biao">选题结果</td>
+          <td width="104" align="left" class="biao">修改成绩</td>
         </tr>
       </table></td>
     <td width="31%" align="right" background="Images/b2.jpg"><img src="Picture/b3.jpg" width="9" height="26" /></td>
   </tr>
 </table>
+
 <table width="99%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#AEDEF4" style="border:1px solid #AEDEF4">
+ 
   <tr>
-    <td width="5%" height="25" align="center" bgcolor="#EFFBFE">题目编号</td>
-    <td align="center" bgcolor="#EFFBFE">题目名称</td>
-    <td colspan="2" align="center" bgcolor="#EFFBFE"> 指导老师 </td>
-    <td align="center" bgcolor="#EFFBFE">学生学号</td>
-    <td align="center" bgcolor="#EFFBFE">学生姓名</td>
+    <td width="17%" height="25" align="center" bgcolor="#EFFBFE">学生学号</td>
+    <td width="17%" align="center" bgcolor="#EFFBFE">学生姓名</td>
+    <td width="17%" align="center" bgcolor="#EFFBFE">指导教师</td>
+    <td width="17%" align="center" bgcolor="#EFFBFE">毕设论题</td>
+    <td width="15%" align="center" bgcolor="#EFFBFE">成绩</td>
+    
   </tr>
+  
+  	<s:iterator value="#request.selectList" var="select">
+  	
+  	
+    <s:form action="updatesuccess.action">
+    <s:textfield label = "学号" name = "select.student.id"/>
+    <s:textfield label = "新成绩" name = "select.grade"/>
+    <s:submit value="确认提交"></s:submit>
+    </s:form>
+
+  	
+				<tr>	
+				<td><input type="text" name="select.student.stuid" value="${select.student.stuid }"></td>
+				<td><input type="text" name="book.id" value="${select.student.stuname }"></td>
+				<td><input type="text" name="book.id" value="${select.subject.teacher.teaname}"></td>
+				<td><input type="text" name="book.id" value="${select.subject.subname }"></td>
+				<td><input type="text" name="book.id" value="${select.grade }"></td>
+					<a href="updategrade.action?select.student.stuid='${select.student.stuid }'">修改</a>
+					</td>
+				</tr>
+				<tr align="center">
+				<td colspan="5" align="center"><input type="submit" value="确定" />&nbsp;&nbsp;&nbsp;&nbsp;<input
+					type="reset" value="重置" /></td>
+			</tr>
+				
+</s:iterator>
 </table>
 </body>
 </html>
+
+
+

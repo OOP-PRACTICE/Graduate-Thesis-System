@@ -27,8 +27,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </style>
 	<script language="javascript">
 	function deleteConfirm() {
-		var message =${sessionScope.mess};
-		var k=window.confirm('message');
+		//var message =${sessionScope.mess};
+		var message="<%= session.getAttribute("mess") %>";
+		var k=window.confirm(message);
 		//alert(k);
 		return k;
 	}
@@ -80,8 +81,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							value='#subject.starttime' /></td>
 					<td align="center" bgcolor="#FFF9DF"><s:property
 							value='#subject.endtime' /></td>
-					<td align="center" bgcolor="#FFF9DF"><a href="select.action?subject.subid=${subject.subid }"
-					 onClick="return deleteConfirm()">选择</a></td>
+					<td align="center" bgcolor="#FFF9DF"><a  onClick="return deleteConfirm()" href="select.action?subject.subid=${subject.subid }"
+					>选择</a></td>
 				
 				</tr>
 			</s:iterator>
