@@ -10,20 +10,20 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A data access object (DAO) providing persistence and search support for
- * Teacher entities. Transaction control of the save(), update() and delete()
+ * Manager entities. Transaction control of the save(), update() and delete()
  * operations can directly support Spring container-managed transactions or they
  * can be augmented to handle user-managed Spring transactions. Each of these
  * methods provides additional information for how to configure it for the
  * desired type of transaction control.
  * 
- * @see model.Teacher
+ * @see model.Manager
  * @author MyEclipse Persistence Tools
  */
-public class TeacherDAO extends BaseHibernateDAO {
-	private static final Logger log = LoggerFactory.getLogger(TeacherDAO.class);
+public class ManagerDAO extends BaseHibernateDAO {
+	private static final Logger log = LoggerFactory.getLogger(ManagerDAO.class);
 
-	public void save(Teacher transientInstance) {
-		log.debug("saving Teacher instance");
+	public void save(Manager transientInstance) {
+		log.debug("saving Manager instance");
 		try {
 			getSession().save(transientInstance);
 			log.debug("save successful");
@@ -33,8 +33,8 @@ public class TeacherDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void delete(Teacher persistentInstance) {
-		log.debug("deleting Teacher instance");
+	public void delete(Manager persistentInstance) {
+		log.debug("deleting Manager instance");
 		try {
 			getSession().delete(persistentInstance);
 			log.debug("delete successful");
@@ -44,10 +44,10 @@ public class TeacherDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public Teacher findById(java.lang.String id) {
-		log.debug("getting Teacher instance with id: " + id);
+	public Manager findById(java.lang.String id) {
+		log.debug("getting Manager instance with id: " + id);
 		try {
-			Teacher instance = (Teacher) getSession().get("model.Teacher", id);
+			Manager instance = (Manager) getSession().get("model.Manager", id);
 			return instance;
 		} catch (RuntimeException re) {
 			log.error("get failed", re);
@@ -55,10 +55,10 @@ public class TeacherDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public List findByExample(Teacher instance) {
-		log.debug("finding Teacher instance by example");
+	public List findByExample(Manager instance) {
+		log.debug("finding Manager instance by example");
 		try {
-			List results = getSession().createCriteria("model.Teacher")
+			List results = getSession().createCriteria("model.Manager")
 					.add(Example.create(instance)).list();
 			log.debug("find by example successful, result size: "
 					+ results.size());
@@ -70,10 +70,10 @@ public class TeacherDAO extends BaseHibernateDAO {
 	}
 
 	public List findByProperty(String propertyName, Object value) {
-		log.debug("finding Teacher instance with property: " + propertyName
+		log.debug("finding Manager instance with property: " + propertyName
 				+ ", value: " + value);
 		try {
-			String queryString = "from Teacher as model where model."
+			String queryString = "from Manager as model where model."
 					+ propertyName + "= ?";
 			Query queryObject = getSession().createQuery(queryString);
 			queryObject.setParameter(0, value);
@@ -85,9 +85,9 @@ public class TeacherDAO extends BaseHibernateDAO {
 	}
 
 	public List findAll() {
-		log.debug("finding all Teacher instances");
+		log.debug("finding all Manager instances");
 		try {
-			String queryString = "from Teacher";
+			String queryString = "from Manager";
 			Query queryObject = getSession().createQuery(queryString);
 			return queryObject.list();
 		} catch (RuntimeException re) {
@@ -96,10 +96,10 @@ public class TeacherDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public Teacher merge(Teacher detachedInstance) {
-		log.debug("merging Teacher instance");
+	public Manager merge(Manager detachedInstance) {
+		log.debug("merging Manager instance");
 		try {
-			Teacher result = (Teacher) getSession().merge(detachedInstance);
+			Manager result = (Manager) getSession().merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -108,8 +108,8 @@ public class TeacherDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void attachDirty(Teacher instance) {
-		log.debug("attaching dirty Teacher instance");
+	public void attachDirty(Manager instance) {
+		log.debug("attaching dirty Manager instance");
 		try {
 			getSession().saveOrUpdate(instance);
 			log.debug("attach successful");
@@ -119,8 +119,8 @@ public class TeacherDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void attachClean(Teacher instance) {
-		log.debug("attaching clean Teacher instance");
+	public void attachClean(Manager instance) {
+		log.debug("attaching clean Manager instance");
 		try {
 			getSession().buildLockRequest(LockOptions.NONE).lock(instance);
 			log.debug("attach successful");
@@ -129,13 +129,13 @@ public class TeacherDAO extends BaseHibernateDAO {
 			throw re;
 		}
 	}
-	
-	public void update(Teacher transientInstance,String pw){
+
+	public void update(Manager transientInstance,String pw){
 		log.debug("update Teacher instance");
 		try{
 			getSession().getTransaction().begin();
 			getSession().update(transientInstance);
-			transientInstance.setTeapw(pw);
+			transientInstance.setManpw(pw);
 			getSession().getTransaction().commit();
 			getSession().flush();
 		}catch(RuntimeException re){

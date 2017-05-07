@@ -4,32 +4,91 @@
 <package name="default" namespace="/webpages" extends="struts-default">
 		<action name="login" class="controller.loginaction" method="login">
 			<result name="stusuccess">/webpages/index.jsp</result> 
- 			<result name="error">/webpages/loginError.html</result>
 			<result name="teasuccess">/webpages/index_teacher.jsp</result> 
+			<result name="mansuccess">/webpages/index_admin.jsp</result>
+			<result name="error">/webpages/loginError.html</result>
 		</action>
-		<action name="baseinfo" class="controller.loginaction" method="baseInfo">
-				<result>/webpages/baseInfo.jsp</result>
+		
+		<action name="baseinfo" class="controller.loginaction" method="baseinfo">
+				<result name="success">/webpages/baseInfo.jsp</result>
 		</action>
+		
+		<action name="baseinfoman" class="controller.loginaction" method="baseinfoman">
+				<result name="success">/webpages/baseInfo2.jsp</result>
+		</action>
+		
+		<action name="grade" class="controller.loginaction" method="grade">
+				<result name="success">/webpages/grade.jsp</result>
+		</action>
+		
+		<action name="baseinfoteacher" class="controller.loginaction" method="baseinfoteacher">
+				<result name="success">/webpages/baseInfo1.jsp</result>
+		</action>
+		
 	    <action name="modify" class="controller.loginaction" method="modifypassword">
 				<result>/webpages/relogin.jsp</result>
 		</action>
 		
-		<action name="baseInfo" class="controller.loginaction" method="baseInfo">
-			<result>/webpages/baseInfo.html</result>  
+		<action name="modifytea" class="controller.loginaction" method="modifypasswordtea">
+				<result>/webpages/relogin.jsp</result>
 		</action>
+		
+		<action name="modifyman" class="controller.loginaction" method="modifypasswordman">
+				<result>/webpages/relogin.jsp</result>
+		</action>
+		
 		<action name="find" class="controller.loginaction" method="findall">
 			<result>/webpages/subjectlist.jsp</result>  
 		</action>
+		
+		<action name="publish" class="controller.loginaction" method="publish">
+			<result>/webpages/publishsuccess.html</result>  
+		</action>
+		
 		<action name="select" class="controller.loginaction" method="select">
 			<result name="success" type="redirectAction">selected</result> 
 			<result name="fail" type="redirectAction">selected</result> 
 		</action>
+		
 		<action name="selected" class="controller.loginaction" method="selected">
 			<result>/webpages/selectedSubinfo.jsp</result>
 		</action>
 		
 		<action name="unselect" class="controller.loginaction" method="unselect">
 			<result>/webpages/selectedSubinfo.jsp</result>  
+		</action>
+		
+		<action name="selecttea" class="controller.loginaction" method="selecttea">
+			<result>/webpages/selectresult.jsp</result>  
+		</action>
+		
+		<action name="selectresultsman" class="controller.loginaction" method="selectresultman">
+			<result>/webpages/manresult.jsp</result>  
+		</action>
+		
+		<action name="resultall" class="controller.loginaction" method="selectresultman">
+			<result>/webpages/resultall.jsp</result>  
+		</action>
+		
+		<action name="modifygrade" class="controller.loginaction" method="modifygrade">
+			<result>/webpages/modifygrade.jsp</result>  
+		</action>
+		
+		<action name="updategrade" class="controller.loginaction" method="updategrade">
+			<result>/webpages/updategrade.jsp</result>  
+		</action>
+		
+		
+		
+		
+		
+		<action name="selectresultman1" class="controller.loginaction" method="selectresultman1">
+			<result>/webpages/writegrade.jsp</result>  
+		</action>
+	
+		
+		<action name="updatesuccess" class="controller.loginaction" method="updatesuccess">
+			<result type="redirectAction">selectresultman1</result>  
 		</action>
 </package>
 </struts>    

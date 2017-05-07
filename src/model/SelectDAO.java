@@ -117,6 +117,21 @@ public class SelectDAO extends BaseHibernateDAO {
 			throw re;
 		}
 	}
+	
+	public List findByPropertysub(Subject value) {
+		log.debug("finding Select instance with property:subid"
+				+ ", value: " + value);
+		try {
+			String queryString = "from Select as model where model.subject.subid"+ "= ?";
+			Query queryObject = getSession().createQuery(queryString);
+			queryObject.setParameter(0, value.getSubid());
+			return queryObject.list();
+		} catch (RuntimeException re) {
+			log.error("find by property name failed", re);
+			throw re;
+		}
+	}
+
 
 	public List findAll() {
 		log.debug("finding all Select instances");
@@ -163,4 +178,19 @@ public class SelectDAO extends BaseHibernateDAO {
 			throw re;
 		}
 	}
+
+	public void update(Select transientInstance,String gr){
+		log.debug("update Books instance");
+		try{
+			getSession().getTransaction().begin();
+			getSession().update(transientInstance);
+			transientInstance.setGrade(gr);
+			getSession().getTransaction().commit();
+			getSession().flush();
+		}catch(RuntimeException re){
+			log.error("update failed",re);
+			throw re;
+		}
+	}
+
 }

@@ -1,6 +1,7 @@
 package model;
 
 import java.util.List;
+import org.hibernate.Transaction;
 import org.hibernate.LockOptions;
 import org.hibernate.Query;
 import org.hibernate.criterion.Example;
@@ -24,7 +25,10 @@ public class SubjectDAO extends BaseHibernateDAO {
 	public void save(Subject transientInstance) {
 		log.debug("saving Subject instance");
 		try {
+			Transaction tran =  getSession().beginTransaction();
 			getSession().save(transientInstance);
+			getSession().flush();
+			tran.commit();
 			log.debug("save successful");
 		} catch (RuntimeException re) {
 			log.error("save failed", re);
@@ -82,6 +86,20 @@ public class SubjectDAO extends BaseHibernateDAO {
 			throw re;
 		}
 	}
+	public List findByProperty(Teacher value) {
+		log.debug("finding Select instance with property:teaid"
+				+ ", value: " + value);
+		try {
+			String queryString = "from Subject as model where model.teacher.teaid"+ "= ?";
+			Query queryObject = getSession().createQuery(queryString);
+			queryObject.setParameter(0, value.getTeaid());
+			return queryObject.list();
+		} catch (RuntimeException re) {
+			log.error("find by property name failed", re);
+			throw re;
+		}
+	}
+
 
 	public List findAll() {
 		log.debug("finding all Subject instances");

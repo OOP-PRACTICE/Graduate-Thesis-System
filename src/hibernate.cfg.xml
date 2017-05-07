@@ -18,7 +18,7 @@
 	<mapping resource="model/Teacher.hbm.xml" />
 	<mapping resource="model/Subject.hbm.xml" />
 	<mapping resource="model/Select.hbm.xml" />
-	
+	<mapping resource="model/Manager.hbm.xml"/>
 
 </session-factory>
 
